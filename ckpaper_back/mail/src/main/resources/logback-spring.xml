@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration debug="false">
+	<include resource="org/springframework/boot/logging/logback/base.xml"/>  
+	<!--定义日志文件的存储地址 勿在 LogBack 的配置中使用相对路径 -->
+	<property name="LOG_HOME" value="/home/oms/core/logs" />
+	<!-- 控制台输出 -->
+	<appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
+		<encoder class="ch.qos.logback.classic.encoder.PatternLayoutEncoder">
+			<!--格式化输出：%d表示日期，%thread表示线程名，%-5level：级别从左显示5个字符宽度%msg：日志消息，%n是换行符 -->
+			<pattern>%d{yyyy-MM-dd HH:mm:ss.SSS} [%thread] %-5level %logger{50} -
+				%msg%n</pattern>
+		</encoder>
+	</appender>
+	<!-- 按照每天生成日志文件 -->
+	<appender name="ERROR"  
+		class="ch.qos.logback.core.rolling.RollingFileAppender">
+		<rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+			<!--日志文件输出的文件名 -->
+			<FileNamePattern>${LOG_HOME}/auto_error_%d{yyyyMMdd}.log
+			</FileNamePattern>
+			<!--日志文件保留天数 -->
+			<MaxHistory>30</MaxHistory>
+		</rollingPolicy>
+		<encoder class="ch.qos.logback.classic.encoder.PatternLayoutEncoder">
+			<!--格式化输出：%d表示日期，%thread表示线程名，%-5level：级别从左显示5个字符宽度%msg：日志消息，%n是换行符 -->
+			<pattern>%d{yyyy-MM-dd HH:mm:ss.SSS} [%thread] %-5level %logger{50} -
+				%msg%n</pattern>
+		</encoder>
+		<!-- 只打印错误日志 --> 
+		<filter class="ch.qos.logback.classic.filter.LevelFilter"> 
+            <level>ERROR</level>  
+            <onMatch>ACCEPT</onMatch>  
+            <onMismatch>DENY</onMismatch>  
+        </filter>
+		<!--日志文件最大的大小 , 去掉triggeringPolicy，可以强制每天产生一个独立的日志文件 -->
+		<!-- <triggeringPolicy -->
+		<!-- class="ch.qos.logback.core.rolling.SizeBasedTriggeringPolicy"> -->
+		<!-- <MaxFileSize>500MB</MaxFileSize> -->
+		<!-- </triggeringPolicy> -->
+	</appender>
+	
+	<!-- 按照每天生成日志文件 -->
+	<appender name="INFO"  
+		class="ch.qos.logback.core.rolling.RollingFileAppender">
+		<rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+			<!--日志文件输出的文件名 -->
+			<FileNamePattern>${LOG_HOME}/auto_info_%d{yyyyMMdd}.log
+			</FileNamePattern>
+			<!--日志文件保留天数 -->
+			<MaxHistory>30</MaxHistory>
+		</rollingPolicy>
+		<encoder class="ch.qos.logback.classic.encoder.PatternLayoutEncoder">
+			<!--格式化输出：%d表示日期，%thread表示线程名，%-5level：级别从左显示5个字符宽度%msg：日志消息，%n是换行符 -->
+			<pattern>%d{yyyy-MM-dd HH:mm:ss.SSS} [%thread] %-5level %logger{50} -
+				%msg%n</pattern>
+		</encoder>
+		<!-- 只打印普通日志 --> 
+		<filter class="ch.qos.logback.classic.filter.LevelFilter"> 
+            <level>INFO</level>  
+            <onMatch>ACCEPT</onMatch>  
+            <onMismatch>DENY</onMismatch>  
+        </filter>
+		<!--日志文件最大的大小 , 去掉triggeringPolicy，可以强制每天产生一个独立的日志文件 -->
+		<!-- <triggeringPolicy -->
+		<!-- class="ch.qos.logback.core.rolling.SizeBasedTriggeringPolicy"> -->
+		<!-- <MaxFileSize>500MB</MaxFileSize> -->
+		<!-- </triggeringPolicy> -->
+	</appender>
+	
+	
+	<!-- 按照每天生成日志文件 -->
+	<appender name="DEBUG"  
+		class="ch.qos.logback.core.rolling.RollingFileAppender">
+		<rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+			<!--日志文件输出的文件名 -->
+			<FileNamePattern>${LOG_HOME}/auto_debug_%d{yyyyMMdd}.log
+			</FileNamePattern>
+			<!--日志文件保留天数 -->
+			<MaxHistory>30</MaxHistory>
+		</rollingPolicy>
+		<encoder class="ch.qos.logback.classic.encoder.PatternLayoutEncoder">
+			<!--格式化输出：%d表示日期，%thread表示线程名，%-5level：级别从左显示5个字符宽度%msg：日志消息，%n是换行符 -->
+			<pattern>%d{yyyy-MM-dd HH:mm:ss.SSS} [%thread] %-5level %logger{50} -
+				%msg%n</pattern>
+		</encoder>
+		<!-- 只打印debug日志 --> 
+		<filter class="ch.qos.logback.classic.filter.LevelFilter"> 
+            <level>DEBUG</level>  
+            <onMatch>ACCEPT</onMatch>  
+            <onMismatch>DENY</onMismatch>  
+        </filter>
+		<!--日志文件最大的大小 , 去掉triggeringPolicy，可以强制每天产生一个独立的日志文件 -->
+		<!-- <triggeringPolicy -->
+		<!-- class="ch.qos.logback.core.rolling.SizeBasedTriggeringPolicy"> -->
+		<!-- <MaxFileSize>500MB</MaxFileSize> -->
+		<!-- </triggeringPolicy> -->
+	</appender>
+	
+	<!--日志打印的包的范围，及分类日志文件存储 -->  
+    <logger name="com.htffund.oms" additivity="false">
+        <level value="DEBUG" />  
+        <appender-ref ref="STDOUT"/>  
+        <appender-ref ref="ERROR"/>  
+        <appender-ref ref="DEBUG"/>  
+        <appender-ref ref="INFO" />  
+    </logger>
+
+	<!-- 日志输出级别 -->
+	<root level="INFO">
+		<appender-ref ref="STDOUT" />
+	</root>
+</configuration>

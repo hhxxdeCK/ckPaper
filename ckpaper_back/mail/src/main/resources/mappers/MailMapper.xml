@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.htffund.oms.mail.dao.MailMapper">
+	<insert id="saveMail" parameterType="com.htffund.oms.common.model.mail.MailInfo">
+		insert into MAIL_INFO
+			(MAIL_ID, MAIL_NAME, MAIL_TIME, MAIL_FROM, MAIL_TO, MAIL_CCTO,
+			 MAIL_BCCTO, MAIL_TEXT, MAIL_SUBJECT, IS_ACTIVE, FILE_PATH,
+			 CREATE_USER, CREATE_DATE, UPDATE_USER, UPDATE_DATE, MAIL_STATUS)
+		values
+			(#{mailId,jdbcType=VARCHAR}, #{mailName,jdbcType=VARCHAR},
+			 #{mailSendTime,jdbcType=DATE}, #{mailFrom,jdbcType=VARCHAR},
+			 #{mailTo,jdbcType=VARCHAR}, #{mailCcTo,jdbcType=VARCHAR},
+			 #{mailBccTo,jdbcType=VARCHAR}, #{text,jdbcType=VARCHAR},
+			 #{subject,jdbcType=VARCHAR}, #{isActive,jdbcType=VARCHAR},
+			 #{filePath,jdbcType=VARCHAR}, #{createUser,jdbcType=VARCHAR},
+			 #{createDate,jdbcType=DATE}, #{updateUser,jdbcType=VARCHAR},
+			 #{updateDate,jdbcType=DATE}, #{sendStatus,jdbcType=VARCHAR}
+			)
+	</insert>
+	<update id="deleteMail" parameterType="String">
+		update MAIL_INFO set IS_ACTIVE = 'N' where MAIL_ID = #{mailId}
+	</update>
+    <select id="viewMail" resultType="com.htffund.oms.common.model.mail.MailInfo">
+        select MAIL_ID mailId, MAIL_TIME mailSendTime, MAIL_FROM mailFrom,
+               MAIL_TO mailTo, MAIL_CCTO mailCcTo,
+               MAIL_BCCTO mailBccTo, MAIL_TEXT mailText,
+               MAIL_SUBJECT subject, CREATE_USER createUser,
+               CREATE_DATE createDate, UPDATE_USER updateUser,
+               UPDATE_DATE updateDate from MAIL_INFO where IS_ACTIVE = 'Y'
+    </select>
+    <select id="templateMail" parameterType="String" resultType="com.htffund.oms.common.model.mail.MailInfo">
+        select MAIL_FROM mailFrom, MAIL_TO mailTo,
+               MAIL_CCTO mailCcTo, MAIL_BCCTO mailBccTo,
+               MAIL_TEXT text, MAIL_SUBJECT subject,
+               FILE_PATH filePath from MAIL_TEMPLATE where TEMPLATE_ID = #{templateId}
+    </select>
+	<update id="changeMailStatus" parameterType="String" >
+		update MAIL_INFO set MAIL_STATUS = '发送成功' where MAIL_ID = #{mailId}
+	</update>
+	<select id="getTemplateMail" parameterType="String" resultType="com.htffund.oms.mail.po.TemplateInfo">
+		select TEMPLATE_ID templateId,
+		       TEMPLATE_NAME templateName, MAIL_FROM mailFrom,
+			   MAIL_TO mailTo, MAIL_CCTO mailCcTo,
+			   MAIL_BCCTO mailBccTo, MAIL_TEXT text,
+			   MAIL_SUBJECT subject, FILE_PATH filePath from MAIL_TEMPLATE where TEMPLATE_ID = #{templateId}
+	</select>
+</mapper>

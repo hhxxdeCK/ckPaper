@@ -1,0 +1,19 @@
+server:
+  port: 8081
+spring:
+  application:
+    name: auth
+  datasource:
+      url: jdbc:mysql://123.56.66.230:3366/demo?useUnicode=true&characterEncoding=UTF-8&rewriteBatchedStatements=true&autoReconnect=true&failOverReadOnly=false&zeroDateTimeBehavior=convertToNull
+      username: root
+      password: 1q2w3e4r
+      driver-class-name: com.mysql.cj.jdbc.Driver
+mybatis:
+   mapperLocations: classpath:/mapper/*.xml
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://123.56.66.230:8761/eureka
+      instance:
+  instance:
+    instance-id: ${spring.application.name}:${server.port}

@@ -1,0 +1,101 @@
+server:
+  port: 8021
+spring:
+  application:
+    name: oms-mail
+  datasource:
+#    username: oms_dev
+#    password: oms_dev
+#    url: jdbc:oracle:thin:@10.50.144.77:1521:htftest
+    username: zjw_test
+    password: zjw_test
+    url: jdbc:oracle:thin:@10.220.20.87:1521:orclpdb
+    driver-class-name: oracle.jdbc.driver.OracleDriver
+  freemarker:
+    template-loader-path: classpath:templates/
+    check-template-location: true
+  servlet:
+    multipart:
+      max-file-size: 100MB
+      max-request-size: 100MB
+  mail:
+    host: smtp.qq.com
+    port: 587
+#    port: 222
+    username: 805556939@qq.com
+    password: xpwvtxnhhkaebcgg
+    properties:
+      mail:
+        smtp:
+          auth: true
+          starttls:
+            enable: true
+            required: true
+  redis:
+    host: 10.220.20.34
+    port: 6379
+    password: 1qaz@WSX
+    jedis:
+      pool:
+        max-active: 8
+        max-idle: 10
+        min-idle: 0
+        max-wait: -1ms
+    timeout: 1000s
+mybatis:
+  mapper-locations: classpath*:mappers/*.xml
+
+eureka:
+  client:
+    serviceUrl:
+      # defaultZone: http://localhost:8761/eureka/
+      defaultZone: http://10.220.20.32:8761/eureka/
+  instance:
+    prefer-ip-address: true
+    lease-renewal-interval-in-seconds: 5
+    lease-expiration-duration-in-seconds: 10
+
+#pagehelper
+pagehelper:
+  helperDialect: oracle
+  reasonable: true
+  supportMethodsArguments: true
+  params: count=countSql
+logging:
+  config: classpath:logback-spring.xml
+crm:
+  url: http://10.50.115.183:9101/rest
+  username: yypt
+  password: yypt123
+
+ecp:
+  url: http://10.50.115.91:8089/productcenter
+  username: yypt
+  password: yypt123
+
+cts:
+  url: http://10.50.16.90:8037/cts
+
+yss:
+  publicKeyPath: src/main/resources/Fast_Server_PublicCert.cer
+  url: http://10.50.115.133:8888/YSSUCOBRIDGE/ws/com/yss/restful/service/
+  scheduleUrl: http://10.50.115.133:8888/YSSUCOBRIDGE/ws/com/yss/fast/task/schedulingscheme/rest/service/ISchedulerRestService/
+  addNvExpPmsUrl: http://10.50.115.133:8888/YSSUCOBRIDGE/ws/com/yss/uco/dataintegration/rest/service/IInterfacePortRestService/addItfParams
+ncrm:
+  url: http://hcrm.htfcrmuat.com:8080
+
+#local
+nvrp:
+  localPath: D:/omsNAV
+  lookPath: http://192.168.10.26/exchange
+#develop
+#nvrp:
+#  localPath: root/yss
+#  lookPath: http://10.50.16.136/exchange
+
+ta:
+  url: http://10.60.114.76:8099
+
+# 代销关系导出文件模板
+safundref:
+  exportFile: xlsx/saFundRefExport.xlsx

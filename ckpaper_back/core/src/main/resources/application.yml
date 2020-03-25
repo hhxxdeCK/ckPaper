@@ -1,0 +1,24 @@
+server:
+  port: 8082
+spring:
+  application:
+    name: core
+  datasource:
+      url: jdbc:mysql://123.56.66.230:3366/demo?useUnicode=true&characterEncoding=UTF-8&rewriteBatchedStatements=true&autoReconnect=true&failOverReadOnly=false&zeroDateTimeBehavior=convertToNull
+      username: root
+      password: 1q2w3e4r
+      driver-class-name: com.mysql.cj.jdbc.Driver
+  servlet:
+    multipart:
+      max-file-size: 100MB
+      max-request-size: 100MB
+mybatis:
+  mapper-locations: classpath*:mappers/*.xml
+logging:
+  level:
+    com.ck.paper.*.dao: debug
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://123.56.66.230:8761/eureka

@@ -1,0 +1,14 @@
+server:
+  port: 8761
+eureka:
+  server:
+    eviction-interval-timer-in-ms: 6000
+  instance:
+    hostname: localhost
+  client:
+    healthcheck:
+      enabled: true
+    registerWithEureka: false # 作为服务器，禁止将其自身注册到server上去
+    fetchRegistry: false      # 是否需要从Eureka Server上拉取注册信息到本地
+    serviceUrl:
+      defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/ # 设置与Eureka Server交互的地址，查询服务和注册服务都需要依赖这个地址。默认是http://localhost:8761/eureka ；多个地址可使用 , 分隔。

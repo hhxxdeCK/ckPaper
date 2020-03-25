@@ -1,0 +1,297 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="c48ba22a-e060-4086-b97f-5cb94465c59e" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../vue/src/assets/123456.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../vue/src/assets/logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../vue/src/views/find/FindSearchPage.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../vue/src/views/find/FindThingsPage.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../vue/src/views/find/Homepage.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../vue/src/views/find/RecruitmentPage.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../vue/src/views/find/RecruitmentSearchPage.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/heeexy/example/MyApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ck/paper/MyApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/heeexy/example/config/exception/CommonJsonException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ck/paper/config/exception/CommonJsonException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/heeexy/example/config/exception/GlobalExceptionHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ck/paper/config/exception/GlobalExceptionHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/heeexy/example/config/exception/MainsiteErrorController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ck/paper/config/exception/MainsiteErrorController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/heeexy/example/config/shiro/AjaxPermissionsAuthorizationFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ck/paper/config/shiro/AjaxPermissionsAuthorizationFilter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/heeexy/example/config/shiro/ShiroConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ck/paper/config/shiro/ShiroConfiguration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/heeexy/example/config/shiro/UserRealm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ck/paper/config/shiro/UserRealm.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/heeexy/example/config/system/DefaultView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ck/paper/config/system/DefaultView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/heeexy/example/controller/ArticleController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ck/paper/controller/ArticleController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/heeexy/example/controller/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ck/paper/controller/LoginController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/heeexy/example/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ck/paper/controller/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/heeexy/example/dao/ArticleDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ck/paper/dao/ArticleDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/heeexy/example/dao/LoginDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ck/paper/dao/LoginDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/heeexy/example/dao/PermissionDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ck/paper/dao/PermissionDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/heeexy/example/dao/UserDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ck/paper/dao/UserDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/heeexy/example/service/ArticleService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ck/paper/service/ArticleService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/heeexy/example/service/LoginService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ck/paper/service/LoginService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/heeexy/example/service/PermissionService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ck/paper/service/PermissionService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/heeexy/example/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ck/paper/service/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/heeexy/example/service/impl/ArticleServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ck/paper/service/impl/ArticleServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/heeexy/example/service/impl/LoginServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ck/paper/service/impl/LoginServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/heeexy/example/service/impl/PermissionServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ck/paper/service/impl/PermissionServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/heeexy/example/service/impl/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ck/paper/service/impl/UserServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/heeexy/example/util/CommonUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ck/paper/util/CommonUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/heeexy/example/util/StringTools.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ck/paper/util/StringTools.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/heeexy/example/util/constants/Constants.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ck/paper/util/constants/Constants.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/heeexy/example/util/constants/ErrorEnum.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ck/paper/util/constants/ErrorEnum.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/heeexy/example/util/model/One2Many.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ck/paper/util/model/One2Many.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/mapper/ArticleMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mapper/ArticleMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/mapper/LoginMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mapper/LoginMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/mapper/PermissionMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mapper/PermissionMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/mapper/UserMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mapper/UserMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../vue/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../vue/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../vue/src/App.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../vue/src/App.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../vue/src/permission.js" beforeDir="false" afterPath="$PROJECT_DIR$/../vue/src/permission.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../vue/src/router/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/../vue/src/router/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../vue/src/views/layout/Layout.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../vue/src/views/layout/Layout.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../vue/src/views/login/index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../vue/src/views/login/index.vue" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CompilerWorkspaceConfiguration">
+    <option name="MAKE_PROJECT_ON_SAVE" value="true" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="demo" type="feb32156:DbDataSourceImpl" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="demo" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="demo" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="demo: schema" type="76f4a085:MysqlImplModel$Schema" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="DefaultGradleProjectSettings">
+    <option name="isMigrated" value="true" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="JRebelWorkspace">
+    <option name="jrebelEnabledAutocompile" value="true" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="1Z1H9Lx1wVO0niDe9GMS0I195YC" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DatabaseDriversLRU" value="mysql" />
+    <property name="MyBatisLogPluginindexNum" value="148" />
+    <property name="MyBatisLogPluginparameters" value="Parameters:" />
+    <property name="MyBatisLogPluginpreparing" value="Preparing:" />
+    <property name="MyBatisLogPluginrunning" value="true" />
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Desktop/毕业设计/vue" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="restartRequiresConfirmation" value="false" />
+  </component>
+  <component name="RunManager" selected="Spring Boot.MyApplication">
+    <configuration name="MyApplication (1)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="back" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.ck.paper.MyApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MyApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="back" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.heeexy.example.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.heeexy.example.MyApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Spring Boot.MyApplication" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand>
+              <path>
+                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
+                <item name="root:demo" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+              </path>
+              <path>
+                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
+                <item name="root:demo" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+                <item name="com.intellij.database.console.session.MessageBusSession@77e0a3bd" type="9fbbdea:ServiceModel$ServiceNode" />
+              </path>
+            </expand>
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="c48ba22a-e060-4086-b97f-5cb94465c59e" name="Default Changelist" comment="" />
+      <created>1583999527400</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1583999527400</updated>
+      <workItem from="1583999531325" duration="24000" />
+      <workItem from="1583999570870" duration="4980000" />
+      <workItem from="1584010979214" duration="5204000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="451" y="195" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1584007186982">
+      <screen x="75" y="0" width="1845" height="1080" />
+    </state>
+    <state x="451" y="195" key="#com.intellij.execution.impl.EditConfigurationsDialog/-1291.305.1291.768/75.0.1845.1080@75.0.1845.1080" timestamp="1584007186982" />
+    <state x="843" y="429" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog" timestamp="1584000976181">
+      <screen x="75" y="0" width="1845" height="1080" />
+    </state>
+    <state x="843" y="429" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog/-1291.305.1291.768/75.0.1845.1080@75.0.1845.1080" timestamp="1584000976181" />
+    <state x="777" y="295" key="FileChooserDialogImpl" timestamp="1584007425400">
+      <screen x="75" y="0" width="1845" height="1080" />
+    </state>
+    <state x="777" y="295" key="FileChooserDialogImpl/-1291.305.1291.768/75.0.1845.1080@75.0.1845.1080" timestamp="1584007425400" />
+    <state width="1802" height="308" key="GridCell.Tab.0.bottom" timestamp="1584009852356">
+      <screen x="75" y="0" width="1845" height="1080" />
+    </state>
+    <state width="1802" height="308" key="GridCell.Tab.0.bottom/-1291.305.1291.768/75.0.1845.1080@75.0.1845.1080" timestamp="1584009852356" />
+    <state width="1802" height="308" key="GridCell.Tab.0.center" timestamp="1584009852356">
+      <screen x="75" y="0" width="1845" height="1080" />
+    </state>
+    <state width="1802" height="308" key="GridCell.Tab.0.center/-1291.305.1291.768/75.0.1845.1080@75.0.1845.1080" timestamp="1584009852356" />
+    <state width="1802" height="308" key="GridCell.Tab.0.left" timestamp="1584009852356">
+      <screen x="75" y="0" width="1845" height="1080" />
+    </state>
+    <state width="1802" height="308" key="GridCell.Tab.0.left/-1291.305.1291.768/75.0.1845.1080@75.0.1845.1080" timestamp="1584009852356" />
+    <state width="1802" height="308" key="GridCell.Tab.0.right" timestamp="1584009852356">
+      <screen x="75" y="0" width="1845" height="1080" />
+    </state>
+    <state width="1802" height="308" key="GridCell.Tab.0.right/-1291.305.1291.768/75.0.1845.1080@75.0.1845.1080" timestamp="1584009852356" />
+    <state width="1802" height="308" key="GridCell.Tab.1.bottom" timestamp="1584009852357">
+      <screen x="75" y="0" width="1845" height="1080" />
+    </state>
+    <state width="1802" height="308" key="GridCell.Tab.1.bottom/-1291.305.1291.768/75.0.1845.1080@75.0.1845.1080" timestamp="1584009852357" />
+    <state width="1802" height="308" key="GridCell.Tab.1.center" timestamp="1584009852356">
+      <screen x="75" y="0" width="1845" height="1080" />
+    </state>
+    <state width="1802" height="308" key="GridCell.Tab.1.center/-1291.305.1291.768/75.0.1845.1080@75.0.1845.1080" timestamp="1584009852356" />
+    <state width="1802" height="308" key="GridCell.Tab.1.left" timestamp="1584009852356">
+      <screen x="75" y="0" width="1845" height="1080" />
+    </state>
+    <state width="1802" height="308" key="GridCell.Tab.1.left/-1291.305.1291.768/75.0.1845.1080@75.0.1845.1080" timestamp="1584009852356" />
+    <state width="1802" height="308" key="GridCell.Tab.1.right" timestamp="1584009852356">
+      <screen x="75" y="0" width="1845" height="1080" />
+    </state>
+    <state width="1802" height="308" key="GridCell.Tab.1.right/-1291.305.1291.768/75.0.1845.1080@75.0.1845.1080" timestamp="1584009852356" />
+    <state width="1802" height="308" key="GridCell.Tab.2.bottom" timestamp="1584009852357">
+      <screen x="75" y="0" width="1845" height="1080" />
+    </state>
+    <state width="1802" height="308" key="GridCell.Tab.2.bottom/-1291.305.1291.768/75.0.1845.1080@75.0.1845.1080" timestamp="1584009852357" />
+    <state width="1802" height="308" key="GridCell.Tab.2.center" timestamp="1584009852357">
+      <screen x="75" y="0" width="1845" height="1080" />
+    </state>
+    <state width="1802" height="308" key="GridCell.Tab.2.center/-1291.305.1291.768/75.0.1845.1080@75.0.1845.1080" timestamp="1584009852357" />
+    <state width="1802" height="308" key="GridCell.Tab.2.left" timestamp="1584009852357">
+      <screen x="75" y="0" width="1845" height="1080" />
+    </state>
+    <state width="1802" height="308" key="GridCell.Tab.2.left/-1291.305.1291.768/75.0.1845.1080@75.0.1845.1080" timestamp="1584009852357" />
+    <state width="1802" height="308" key="GridCell.Tab.2.right" timestamp="1584009852357">
+      <screen x="75" y="0" width="1845" height="1080" />
+    </state>
+    <state width="1802" height="308" key="GridCell.Tab.2.right/-1291.305.1291.768/75.0.1845.1080@75.0.1845.1080" timestamp="1584009852357" />
+    <state x="477" y="114" key="SettingsEditor" timestamp="1584000952180">
+      <screen x="75" y="0" width="1845" height="1080" />
+    </state>
+    <state x="477" y="114" key="SettingsEditor/-1291.305.1291.768/75.0.1845.1080@75.0.1845.1080" timestamp="1584000952180" />
+    <state x="549" y="276" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2" timestamp="1584008763690">
+      <screen x="75" y="0" width="1845" height="1080" />
+    </state>
+    <state x="549" y="276" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2/-1291.305.1291.768/75.0.1845.1080@75.0.1845.1080" timestamp="1584008763690" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/ck/paper/config/shiro/UserRealm.java</url>
+          <line>65</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/ck/paper/controller/LoginController.java</url>
+          <line>28</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>
