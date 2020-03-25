@@ -1,0 +1,61 @@
+.home {
+  .el-aside {
+    .title {
+      line-height: 60px;
+      font-size: 26px;
+      text-align: center;
+      color: #ffffff;
+      background-color: #373b3f;
+    }
+    .el-menu {
+      height: calc(100% - 60px);
+      border: 0 none;
+    }
+  }
+  .home_right {
+    height: 100vh;
+    min-width: 1200px;
+    display: flex;
+    flex-direction: column;
+    .el-header {
+      height: 60px;
+      background-color: #545c64;
+      display: flex;
+      justify-content: space-between;
+
+      .el-dropdown {
+        width: 60px;
+        height: 60px;
+        .el-avatar {
+          width: 50px;
+          height: 50px;
+          margin-top: 5px;
+        }
+      }
+    }
+    .el-main {
+      flex: 1;
+      // background-color: #f00;
+    }
+    .el-footer {
+      height: 150px !important;
+      padding: 12px;
+      .title {
+        font-size: 20px;
+      }
+      .links {
+        display: flex;
+        flex-wrap: wrap;
+        .link_item {
+          width: 33.33%;
+          height: 30px;
+          text-align: center;
+          .el-link {
+            display: inline-block;
+            font-size: 16px;
+          }
+        }
+      }
+    }
+  }
+}
