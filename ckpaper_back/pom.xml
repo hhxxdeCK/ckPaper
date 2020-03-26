@@ -20,7 +20,7 @@
 	<modules>
 		<!--<module>eureka</module>-->
 		<module>core</module>
-		<!--<module>zuul</module>-->
+		<module>zuul</module>
 		<module>common</module>
 		<!--<module>mail</module>-->
 		<module>auth</module>

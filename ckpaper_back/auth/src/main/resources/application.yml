@@ -12,8 +12,8 @@ mybatis:
    mapperLocations: classpath:/mapper/*.xml
 eureka:
   client:
+    healthcheck:
+      enabled: true
     serviceUrl:
       defaultZone: http://123.56.66.230:8761/eureka
-      instance:
-  instance:
-    instance-id: ${spring.application.name}:${server.port}
+    registry-fetch-interval-seconds: 10000
