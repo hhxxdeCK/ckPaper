@@ -42,21 +42,26 @@
       </el-aside>
       <el-container class="home_right">
         <el-header>
-          <div></div>
-          <el-dropdown>
-            <el-avatar :src="userIcon"></el-avatar>
-            <el-dropdown-menu slot="dropdown">
-              <el-dropdown-item>
-                <span @click="persionalSpace">个人空间</span>
-              </el-dropdown-item>
-              <el-dropdown-item>
-                <span @click="persionalSpace">写感谢信</span>
-              </el-dropdown-item>
-              <el-dropdown-item>
-                <span @click="logout">退出</span>
-              </el-dropdown-item>
-            </el-dropdown-menu>
-          </el-dropdown>
+          <div class="breadcrumb">
+            <my-breadcrumb :breadcrumbList="breadcrumbList"></my-breadcrumb>
+          </div>
+          <div class="header_right">
+            <el-input placeholder="输入物品特征进行搜索" v-model="searchKeyWord" clearable></el-input>
+            <el-dropdown>
+              <el-avatar :src="userIcon"></el-avatar>
+              <el-dropdown-menu slot="dropdown">
+                <el-dropdown-item>
+                  <span @click="persionalSpace">个人空间</span>
+                </el-dropdown-item>
+                <el-dropdown-item>
+                  <span @click="persionalSpace">写感谢信</span>
+                </el-dropdown-item>
+                <el-dropdown-item>
+                  <span @click="logout">退出</span>
+                </el-dropdown-item>
+              </el-dropdown-menu>
+            </el-dropdown>
+          </div>
         </el-header>
         <el-main>
           <router-view></router-view>
@@ -75,6 +80,7 @@
 </template>
 
 <script>
+import myBreadcrumb from './../components/breadcrumb/breadcrumb'
 export default {
   name: 'Home',
   data() {
@@ -122,7 +128,40 @@ export default {
           href: 'http://www.mmissing.com/',
           text: '全球失物招领'
         }
-      ]
+      ],
+      searchKeyWord: ''
+    }
+  },
+  components: { myBreadcrumb },
+  computed: {
+    breadcrumbList() {
+      let child = {}
+      switch (this.$route.path) {
+        case '/hihome':
+          break
+        case '/findThings':
+          child = { text: '发布寻物启事' }
+          break
+        case '/recruitment':
+          child = { text: '发布招领启事' }
+          break
+        case '/findSearch':
+          child = { text: '寻找失物' }
+          break
+        case '/recruitmentSearch':
+          child = { text: '寻找失主' }
+          break
+        case '/user':
+          child = { text: '用户管理' }
+          break
+        default:
+          break
+      }
+      if (JSON.stringify(child) !== '{}') {
+        return [{ path: '/', text: '首页' }, child]
+      } else {
+        return [{ path: '/', text: '首页' }]
+      }
     }
   },
   methods: {

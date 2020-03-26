@@ -1,11 +1,5 @@
 <template>
   <el-container>
-    <el-header>
-      <el-breadcrumb style="font-size: 150%" separator-class="el-icon-arrow-right">
-        <el-breadcrumb-item :to="{ path: '/hihome' }">首页</el-breadcrumb-item>
-        <el-breadcrumb-item>寻找失物</el-breadcrumb-item>
-      </el-breadcrumb>
-    </el-header>
     <el-main>
       <el-row>
         <el-col :span="2">
