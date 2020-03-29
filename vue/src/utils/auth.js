@@ -10,6 +10,6 @@ export function setToken() {
   return Cookies.set(LoginKey, "1")
 }
 
-export function removeTo808ken() {
+export function removeToken() {
   return Cookies.remove(LoginKey)
 }

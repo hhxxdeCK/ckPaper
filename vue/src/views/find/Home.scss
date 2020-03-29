@@ -5,7 +5,7 @@
       font-size: 26px;
       text-align: center;
       color: #ffffff;
-      background-color: #373b3f;
+      background-color: #304156;
     }
     .el-menu {
       height: calc(100% - 60px);
@@ -19,7 +19,8 @@
     flex-direction: column;
     .el-header {
       height: 60px;
-      background-color: #545c64;
+      background-color: #fff;
+      border-bottom: 1px solid #e6e6e6;
       display: flex;
       justify-content: space-between;
       align-items: center;

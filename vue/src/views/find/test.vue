@@ -178,111 +178,111 @@ export default {
     }
   },
   methods: {
-    writeLetter() {
-      this.$prompt('请输入感谢信内容', '提示', {
-        confirmButtonText: '确定',
-        cancelButtonText: '取消'
-      })
-        .then(({ value }) => {
-          this.$axios({
-            method: 'post',
-            url: 'http://123.56.66.230:7777/core/letter',
-            params: {
-              content: value,
-              userId: this.userId
-            }
-          })
-          this.$message({
-            type: 'success',
-            message: '感谢信发表成功'
-          })
-        })
-        .catch(() => {
-          this.$message({
-            type: 'error',
-            message: '发表失败'
-          })
-        })
-    },
-    addDynamic(index, id, forR) {
-      this.$axios({
-        method: 'post',
-        url: 'http://123.56.66.230:7777/core/dynamic',
-        params: {
-          forR: forR,
-          person: this.person,
-          userId: this.userId,
-          id: id
-        }
-      }).then(res => {
-        this.persionalSpace()
-      })
-    },
-    deleteNotice(id) {
-      this.visible = false
-      this.$axios({
-        method: 'put',
-        url: 'http://123.56.66.230:7777/core/notice/id',
-        params: {
-          id: id,
-          deletePassword: this.deletePassword
-        }
-      }).then(res => {
-        console.log(res)
-        if (res.code === 200) {
-          this.$message.success(res.message)
-          this.persionalSpace()
-        } else {
-          this.$message.error(res.message)
-        }
-      })
-    },
-    getUserInfo() {
-      this.$store.dispatch('GetInfo', this.loginForm).then(data => {
-        this.person = data.userPermission.nickname
-        this.userId = data.userPermission.userId
-      })
-    },
-    persionalSpace() {
-      this.$axios({
-        methods: 'get',
-        url: 'http://123.56.66.230:7777/core/notice/userId',
-        params: {
-          userId: this.userId
-        }
-      }).then(res => {
-        this.backForm = res.data
-        if (this.backForm.length === 0) {
-          this.dialogFormVisible = false
-          this.$message.error('您没有任何启事')
-        } else {
-          this.dialogFormVisible = true
-        }
-      })
-    },
-    logout() {
-      this.$confirm('此操作将退出此系统, 是否继续?', '提示', {
-        confirmButtonText: '确定',
-        cancelButtonText: '取消',
-        type: 'warning'
-      })
-        .then(() => {
-          this.$store.dispatch('LogOut').then(() => {
-            this.$router.push({ path: '/login' })
-            location.reload() // 为了重新实例化vue-router对象 避免bug
-          })
-          this.$message({
-            type: 'success',
-            message: '已退出!'
-          })
-        })
-        .catch(() => {
-          this.$message({
-            type: 'info',
-            message: '已取消退出'
-          })
-        })
-    },
+    // writeLetter() {
+    //   this.$prompt('请输入感谢信内容', '提示', {
+    //     confirmButtonText: '确定',
+    //     cancelButtonText: '取消'
+    //   })
+    //     .then(({ value }) => {
+    //       this.$axios({
+    //         method: 'post',
+    //         url: 'http://123.56.66.230:7777/core/letter',
+    //         params: {
+    //           content: value,
+    //           userId: this.userId
+    //         }
+    //       })
+    //       this.$message({
+    //         type: 'success',
+    //         message: '感谢信发表成功'
+    //       })
+    //     })
+    //     .catch(() => {
+    //       this.$message({
+    //         type: 'error',
+    //         message: '发表失败'
+    //       })
+    //     })
+    // },
+    // addDynamic(index, id, forR) {
+    //   this.$axios({
+    //     method: 'post',
+    //     url: 'http://123.56.66.230:7777/core/dynamic',
+    //     params: {
+    //       forR: forR,
+    //       person: this.person,
+    //       userId: this.userId,
+    //       id: id
+    //     }
+    //   }).then(res => {
+    //     this.persionalSpace()
+    //   })
+    // },
+    // deleteNotice(id) {
+    //   this.visible = false
+    //   this.$axios({
+    //     method: 'put',
+    //     url: 'http://123.56.66.230:7777/core/notice/id',
+    //     params: {
+    //       id: id,
+    //       deletePassword: this.deletePassword
+    //     }
+    //   }).then(res => {
+    //     console.log(res)
+    //     if (res.code === 200) {
+    //       this.$message.success(res.message)
+    //       this.persionalSpace()
+    //     } else {
+    //       this.$message.error(res.message)
+    //     }
+    //   })
+    // },
+    // getUserInfo() {
+    //   this.$store.dispatch('GetInfo', this.loginForm).then(data => {
+    //     this.person = data.userPermission.nickname
+    //     this.userId = data.userPermission.userId
+    //   })
+    // },
+    // persionalSpace() {
+    //   this.$axios({
+    //     methods: 'get',
+    //     url: 'http://123.56.66.230:7777/core/notice/userId',
+    //     params: {
+    //       userId: this.userId
+    //     }
+    //   }).then(res => {
+    //     this.backForm = res.data
+    //     if (this.backForm.length === 0) {
+    //       this.dialogFormVisible = false
+    //       this.$message.error('您没有任何启事')
+    //     } else {
+    //       this.dialogFormVisible = true
+    //     }
+    //   })
+    // },
+    // logout() {
+    //   this.$confirm('此操作将退出此系统, 是否继续?', '提示', {
+    //     confirmButtonText: '确定',
+    //     cancelButtonText: '取消',
+    //     type: 'warning'
+    //   })
+    //     .then(() => {
+    //       this.$store.dispatch('LogOut').then(() => {
+    //         this.$router.push({ path: '/login' })
+    //         location.reload() // 为了重新实例化vue-router对象 避免bug
+    //       })
+    //       this.$message({
+    //         type: 'success',
+    //         message: '已退出!'
+    //       })
+    //     })
+    //     .catch(() => {
+    //       this.$message({
+    //         type: 'info',
+    //         message: '已取消退出'
+    //       })
+    //     })
+    // },
     getThankWord() {
       this.$axios({
         method: 'get',

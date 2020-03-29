@@ -7,14 +7,14 @@ import FindThingsPage from "../views/find/FindThingsPage"
 import RecruitmentPage from "../views/find/RecruitmentPage"
 import FindSearchPage from "../views/find/FindSearchPage"
 import RecruitmentSearchPage from "../views/find/RecruitmentSearchPage"
-import Home from '../views/find/Home.vue'
+
 import Homepage from "../views/find/Homepage"
+import Home from "./../views/find/Home.vue"
 //去除懒加载，获取环境
 const _import = require('./_import_' + process.env.NODE_ENV)
 Vue.use(Router)
 export const constantRouterMap = [
-  { path: '/home', component: Homepage, hidden: true },
-  { path: '/', component: _import('login/index'), hidden: true },
+  { path: '/home', component: Home, hidden: true },
   { path: '/login', component: _import('login/index'), hidden: true },
   { path: '/404', component: _import('404'), hidden: true },
   /*{
@@ -28,7 +28,11 @@ export const constantRouterMap = [
     }]
   }*/
 ]
-
+export default new Router({
+  // mode: 'history', //后端支持可开
+  scrollBehavior: () => ({ y: 0 }),
+  routes: constantRouterMap
+})
 export const asyncRouterMap = [
   {
     path: '/system',
@@ -47,18 +51,14 @@ export const asyncRouterMap = [
     ]
   },
   {
-    path: '/user1',
+    path: '/user',
     component: Layout,
     redirect: '/user/',
     name: '',
     meta: { title: '用户权限', icon: 'table' },
     children: [
       {
-        path: '',
-        name: '用户列表',
-        component: _import('user/user'),
-        meta: { title: '用户列表', icon: 'user' },
-        menu: 'user'
+        path: '', name: '用户列表', component: _import('user/user'), meta: { title: '用户列表', icon: 'user' }, menu: 'user'
       },
       {
         path: 'role',
@@ -69,6 +69,8 @@ export const asyncRouterMap = [
       },
     ]
   },
+  { path: '*', redirect: '/404', hidden: true },
+
   {
     path: '/',
     name: 'home',
@@ -79,7 +81,8 @@ export const asyncRouterMap = [
         path: '/hihome',
         name: 'homeIndex',
         component: Homepage
-      }, {
+      },
+      {
         path: '/findThings',
         name: 'findThings',
         component: FindThingsPage
@@ -100,20 +103,8 @@ export const asyncRouterMap = [
         component: RecruitmentSearchPage
       },
       {
-        path: '/user',
-        name: '用户列表',
-        component: _import('user/user'),
-        meta: { title: '用户列表', icon: 'user' },
-        menu: 'user'
-      }
+        path: '/userPage', name: '用户列表', component: _import('user/user'), meta: { title: '用户列表', icon: 'user' }, menu: 'user'
+      },
     ]
-  },
-  { path: '*', redirect: '/404', hidden: true },
-  { path: '/login', component: _import('login/index'), hidden: true }
+  }
 ]
-
-export default new Router({
-  // mode: 'history', //后端支持可开
-  scrollBehavior: () => ({ y: 0 }),
-  routes: asyncRouterMap
-})
