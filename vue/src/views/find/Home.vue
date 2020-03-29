@@ -168,7 +168,7 @@ export default {
     persionalSpace() {
       this.$axios({
         methods: 'get',
-        url: 'http://localhost:8082/notice/userId',
+        url: 'http://123.56.66.230:7777/core/notice/userId',
         params: {
           userId: this.userId
         }

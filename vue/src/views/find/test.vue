@@ -1,6 +1,6 @@
 <template>
   <el-container>
-    
+
     <el-header class="el-header">
       <span style="font-size: 30px; color: white">
         <i class="el-icon-s-home"></i>失物招领系统
@@ -186,7 +186,7 @@ export default {
         .then(({ value }) => {
           this.$axios({
             method: 'post',
-            url: 'http://localhost:8082/letter',
+            url: 'http://123.56.66.230:7777/core/letter',
             params: {
               content: value,
               userId: this.userId
@@ -207,7 +207,7 @@ export default {
     addDynamic(index, id, forR) {
       this.$axios({
         method: 'post',
-        url: 'http://localhost:8082/dynamic',
+        url: 'http://123.56.66.230:7777/core/dynamic',
         params: {
           forR: forR,
           person: this.person,
@@ -222,7 +222,7 @@ export default {
       this.visible = false
       this.$axios({
         method: 'put',
-        url: 'http://localhost:8082/notice/id',
+        url: 'http://123.56.66.230:7777/core/notice/id',
         params: {
           id: id,
           deletePassword: this.deletePassword
@@ -246,7 +246,7 @@ export default {
     persionalSpace() {
       this.$axios({
         methods: 'get',
-        url: 'http://localhost:8082/notice/userId',
+        url: 'http://123.56.66.230:7777/core/notice/userId',
         params: {
           userId: this.userId
         }
@@ -286,7 +286,7 @@ export default {
     getThankWord() {
       this.$axios({
         method: 'get',
-        url: 'http://localhost:8082/letter/'
+        url: 'http://123.56.66.230:7777/core/letter/'
       })
         .then(response => {
           // 成功的返回
@@ -297,7 +297,7 @@ export default {
     getHonestyWord() {
       this.$axios({
         method: 'get',
-        url: 'http://localhost:8082/honestyWord'
+        url: 'http://123.56.66.230:7777/core/honestyWord'
       }).then(response => {
         this.honestyWord = response.data.content
       })
@@ -305,7 +305,7 @@ export default {
     getDynamic() {
       this.$axios({
         method: 'get',
-        url: 'http://localhost:8082/dynamic'
+        url: 'http://123.56.66.230:7777/core/dynamic'
       }).then(response => {
         this.dynamic = response.data
       })

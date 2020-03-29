@@ -161,12 +161,13 @@
       }
     },
     methods: {
+    //查找招领启事
       search() {
         this.findSearchForm.startTime = this.lostTime[0];
         this.findSearchForm.endTime = this.lostTime[1];
         this.$axios({
           method: "get",
-          url: "http://localhost:8082/notice/",
+          url: "http://123.56.66.230:7777/core/notice/",
           params: {
             category: this.findSearchForm.category,
             startTime: this.findSearchForm.startTime,

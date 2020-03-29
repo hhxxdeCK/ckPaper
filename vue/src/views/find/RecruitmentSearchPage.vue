@@ -175,7 +175,7 @@ export default {
       this.recruitmentSearchForm.endTime = this.lostTime[1]
       this.$axios({
         method: 'get',
-        url: 'http://localhost:8082/notice/',
+        url: 'http://123.56.66.230:7777/core/notice/',
         params: {
           category: this.recruitmentSearchForm.category,
           startTime: this.recruitmentSearchForm.startTime,

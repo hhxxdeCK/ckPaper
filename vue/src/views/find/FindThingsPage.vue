@@ -244,7 +244,7 @@ export default {
       this.$refs.upload.submit()
       console.log(this.formData)
       this.$axios({
-        url: 'http://localhost:8082/pictures',
+        url: 'http://123.56.66.230:7777/core/pictures',
         method: 'post',
         data: this.formData
       })
@@ -264,7 +264,7 @@ export default {
       form.picture = this.base64
       this.$axios({
         method: 'put',
-        url: 'http://localhost:8082/notice',
+        url: 'http://123.56.66.230:7777/core/notice',
         data: form
       })
         .then(response => {
