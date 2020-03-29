@@ -109,6 +109,7 @@ export const asyncRouterMap = [
     ]
   },
   { path: '*', redirect: '/404', hidden: true },
+  { path: '/login', component: _import('login/index'), hidden: true }
 ]
 
 export default new Router({

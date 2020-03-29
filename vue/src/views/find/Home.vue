@@ -165,6 +165,12 @@ export default {
     }
   },
   methods: {
+    getUserInfo() {
+      this.$store.dispatch('GetInfo', this.loginForm).then(data => {
+        this.person = data.userPermission.nickname
+        this.userId = data.userPermission.userId
+      })
+    },
     persionalSpace() {
       this.$axios({
         methods: 'get',
@@ -207,6 +213,7 @@ export default {
     }
   },
   created() {
+    this.getUserInfo()
     console.log(this.$route)
   }
 }
