@@ -2,12 +2,12 @@
   <div class="home_page">
     <div class="left">
       <el-card class="letter_card" v-for="item in letter" :key="item.id">
-        <div>{{item.content}}</div>
+        <div>{{item.content.replace(/{"msg":"登陆已过期,请重新登陆","code":"20011"}/g,'ck')}}</div>
       </el-card>
     </div>
     <div class="right">
       <el-card v-for="item in dynamic" :key="item.id" class="letter_card">
-        <div>{{item.content}}</div>
+        <div>{{item.content.replace(/{"msg":"登陆已过期,请重新登陆","code":"20011"}/g,'ck')}}</div>
       </el-card>
     </div>
   </div>

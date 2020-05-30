@@ -96,7 +96,7 @@ export default {
       userId: '',
       submitBut: 'true',
       recruitment: {
-        forR: 'R',
+        forR: 'F',
         title: '',
         category: '',
         startTime: '',

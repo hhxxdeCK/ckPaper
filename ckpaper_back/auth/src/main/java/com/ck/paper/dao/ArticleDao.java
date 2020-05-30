@@ -1,6 +1,7 @@
 package com.ck.paper.dao;
 
 import com.alibaba.fastjson.JSONObject;
+import org.springframework.stereotype.Component;
 
 import java.util.List;
 
@@ -9,6 +10,7 @@ import java.util.List;
  * @description: 文章Dao层
  * @date: 2017/10/24 16:06
  */
+@Component
 public interface ArticleDao {
 	/**
 	 * 新增文章

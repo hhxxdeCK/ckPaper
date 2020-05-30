@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.ck.paper.letter.dao.ThankLetterDao">
+  <resultMap id="BaseResultMap" type="com.ck.paper.letter.po.ThankLetter">
+    <id column="id" jdbcType="VARCHAR" property="id" />
+    <result column="create_name" jdbcType="VARCHAR" property="createName" />
+    <result column="content" jdbcType="VARCHAR" property="content" />
+    <result column="create_time" jdbcType="TIMESTAMP" property="creatTime" />
+    <result column="update_time" jdbcType="TIMESTAMP" property="updateTime" />
+    <result column="is_active" jdbcType="VARCHAR" property="isActive" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    ID id, CREATE_TIME createName, CONTENT content, CREATE_TIME creatTime, UPDATE_TIME updateTime, IS_ACTIVE isActive
+  </sql>
+  <select id="selectByPrimaryKey" parameterType="java.lang.String" resultMap="BaseResultMap">
+    select 
+    <include refid="Base_Column_List" />
+    from thank_letter
+    where id = #{id,jdbcType=VARCHAR}
+  </select>
+  <select id="getLetters" resultType="com.ck.paper.letter.po.ThankLetter">
+    SELECT <include refid="Base_Column_List" /> FROM thank_letter where is_active = 'Y' order by create_time desc limit 0,10
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.String">
+    delete from thank_letter
+    where id = #{id,jdbcType=VARCHAR}
+  </delete>
+  <insert id="insert" keyColumn="id" keyProperty="id" parameterType="com.ck.paper.letter.po.ThankLetter" useGeneratedKeys="true">
+    insert into thank_letter (create_name, content, create_time, 
+      update_time, is_active)
+    values (#{createName,jdbcType=VARCHAR}, #{content,jdbcType=VARCHAR}, #{creatTime,jdbcType=TIMESTAMP}, 
+      #{updateTime,jdbcType=TIMESTAMP}, #{isActive,jdbcType=VARCHAR})
+  </insert>
+  <insert id="insertSelective" keyColumn="id" keyProperty="id" parameterType="com.ck.paper.letter.po.ThankLetter" useGeneratedKeys="true">
+    insert into thank_letter
+    <trim prefix="(" suffix=")" suffixOverrides=",">
+      <if test="createName != null">
+        create_name,
+      </if>
+      <if test="content != null">
+        content,
+      </if>
+      <if test="creatTime != null">
+        create_time,
+      </if>
+      <if test="updateTime != null">
+        update_time,
+      </if>
+      <if test="isActive != null">
+        is_active,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides=",">
+      <if test="createName != null">
+        #{createName,jdbcType=VARCHAR},
+      </if>
+      <if test="content != null">
+        #{content,jdbcType=VARCHAR},
+      </if>
+      <if test="creatTime != null">
+        #{creatTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="updateTime != null">
+        #{updateTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="isActive != null">
+        #{isActive,jdbcType=VARCHAR},
+      </if>
+    </trim>
+  </insert>
+  <update id="updateByPrimaryKeySelective" parameterType="com.ck.paper.letter.po.ThankLetter">
+    update thank_letter
+    <set>
+      <if test="createName != null">
+        create_name = #{createName,jdbcType=VARCHAR},
+      </if>
+      <if test="content != null">
+        content = #{content,jdbcType=VARCHAR},
+      </if>
+      <if test="creatTime != null">
+        create_time = #{creatTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="updateTime != null">
+        update_time = #{updateTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="isActive != null">
+        is_active = #{isActive,jdbcType=VARCHAR},
+      </if>
+    </set>
+    where id = #{id,jdbcType=VARCHAR}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.ck.paper.letter.po.ThankLetter">
+    update thank_letter
+    set create_name = #{createName,jdbcType=VARCHAR},
+      content = #{content,jdbcType=VARCHAR},
+      create_time = #{creatTime,jdbcType=TIMESTAMP},
+      update_time = #{updateTime,jdbcType=TIMESTAMP},
+      is_active = #{isActive,jdbcType=VARCHAR}
+    where id = #{id,jdbcType=VARCHAR}
+  </update>
+</mapper>

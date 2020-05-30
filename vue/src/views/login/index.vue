@@ -18,7 +18,10 @@
                   autoComplete="on"></el-input>
       </el-form-item>
       <el-form-item>
-        <el-button type="primary" style="width:100%;" :loading="loading" @click.native.prevent="handleLogin">
+        <Verify @success="sucess" @error="error('error')" :type="3"></Verify>
+      </el-form-item>
+      <el-form-item>
+        <el-button type="primary" style="width:100%;" :loading="loading" @click.native.prevent="handleLogin" :disabled="loginIsActive">
           登录
         </el-button>
       </el-form-item>
@@ -26,10 +29,12 @@
   </div>
 </template>
 <script>
+  import Verify from 'vue2-verify'
   export default {
     name: 'login',
     data() {
       return {
+        loginIsActive: 'true',
         loginForm: {
           username: 'admin',
           password: '123456'
@@ -42,6 +47,12 @@
       }
     },
     methods: {
+      sucess() {
+        this.loginIsActive = false
+        },
+      error() {
+        this.$message.error("验证失败")
+      },
       handleLogin() {
         this.$refs.loginForm.validate(valid => {
           if (valid) {
@@ -61,6 +72,9 @@
           }
         })
       }
+    },
+    components: {
+      Verify
     }
   }
 </script>

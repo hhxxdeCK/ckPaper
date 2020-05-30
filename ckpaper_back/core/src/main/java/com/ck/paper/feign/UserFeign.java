@@ -14,7 +14,7 @@ import org.springframework.web.bind.annotation.RequestParam;
  * @return
  */
 
-@FeignClient(value = "auth:8081",configuration = FeignHeadConfiguration.class)
+@FeignClient(value = "AUTH",configuration = FeignHeadConfiguration.class)
 public interface UserFeign {
         @RequestMapping(value = "/user/id", method = RequestMethod.GET)
         public String getUserName(@RequestParam(value = "id") String id);

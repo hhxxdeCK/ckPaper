@@ -72,6 +72,30 @@
           <el-input type="text" v-model="tempUser.nickname">
           </el-input>
         </el-form-item>
+        <el-form-item label="学号" required>
+          <el-input type="text" v-model="tempUser.xuehao">
+          </el-input>
+        </el-form-item>
+        <el-form-item label="院系" required>
+          <el-input type="text" v-model="tempUser.yuanxi">
+          </el-input>
+        </el-form-item>
+        <el-form-item label="手机" required>
+          <el-input type="text" v-model="tempUser.phone">
+          </el-input>
+        </el-form-item>
+        <el-form-item label="qq号" required>
+          <el-input type="text" v-model="tempUser.qqnumber">
+          </el-input>
+        </el-form-item>
+        <el-form-item label="性别" required>
+          <el-input type="text" v-model="tempUser.sex">
+          </el-input>
+        </el-form-item>
+        <el-form-item label="年龄" required>
+          <el-input type="text" v-model="tempUser.age">
+          </el-input>
+        </el-form-item>
       </el-form>
       <div slot="footer" class="dialog-footer">
         <el-button @click="dialogFormVisible = false">取 消</el-button>
@@ -106,7 +130,13 @@
           password: '',
           nickname: '',
           roleId: '',
-          userId: ''
+          userId: '',
+          xuehao: '',
+          qqnumber:'',
+          number:'',
+          yuanxi:'',
+          sex:'',
+          age:''
         }
       }
     },

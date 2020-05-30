@@ -51,7 +51,7 @@ public class DynamicController {
                 String user = userFeign.getUserName(userId);
                 String content;
                 // 如果为R说明是招领启事，F为失物启事
-                if(forR.equals("R")){
+                if("R".equals(forR)){
                         content = user + "的招领启事已完成：领取人为" + person + "。时间为：" + TimeUtil.getLocalDateAndTime();
                 } else {
                         content = user + "的失物启事已完成: 拾获人为" + person + "。时间为：" + TimeUtil.getLocalDateAndTime();

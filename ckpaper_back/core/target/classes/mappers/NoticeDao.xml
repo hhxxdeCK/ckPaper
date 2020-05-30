@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.ck.paper.notice.dao.NoticeDao">
+  <resultMap id="BaseResultMap" type="com.ck.paper.notice.po.Notice">
+    <id column="id" jdbcType="VARCHAR" property="id" />
+    <result column="title" jdbcType="VARCHAR" property="title" />
+    <result column="category" jdbcType="VARCHAR" property="category" />
+    <result column="start_time" jdbcType="TIMESTAMP" property="startTime" />
+    <result column="address" jdbcType="VARCHAR" property="address" />
+    <result column="amount" jdbcType="INTEGER" property="amount" />
+    <result column="expiration_date" jdbcType="INTEGER" property="expirationDate" />
+    <result column="description" jdbcType="VARCHAR" property="description" />
+    <result column="delete_password" jdbcType="VARCHAR" property="deletePassword" />
+    <result column="picture" jdbcType="VARCHAR" property="picture" />
+    <result column="f_or_r" jdbcType="VARCHAR" property="forR" />
+    <result column="user_id" jdbcType="VARCHAR" property="userId" />
+    <result column="is_active" jdbcType="VARCHAR" property="isActive" />
+    <result column="end_time" jdbcType="TIMESTAMP" property="endTime" />
+    <result column="create_time" jdbcType="TIMESTAMP" property="createTime" />
+    <result column="update_time" jdbcType="TIMESTAMP" property="updateTime" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    id, title, category, start_time, address, amount, expiration_date, description, delete_password, 
+    picture, user_id, is_active, end_time
+  </sql>
+  <select id="selectByPrimaryKey" parameterType="java.lang.String" resultMap="BaseResultMap">
+    select 
+    <include refid="Base_Column_List" />
+    from notice
+    where id = #{id,jdbcType=VARCHAR}
+  </select>
+  <select id="getNotice" resultType="com.ck.paper.notice.po.Notice">
+    select
+    n.id id , n.title title , n.category category , n.start_time startTime , n.address address,
+    n.amount amount, n.expiration_date expiration_date , n.description description ,
+    n.delete_password delete_password ,u.nickname contactPerson ,u.qq_number qqNumber ,
+    u.email email ,u.phone phone ,n.picture picture , n.user_id user_id , n.is_active is_active , n.end_time endTime
+    from notice n
+    left join sys_user u on n.user_id = u.id
+    where n.is_active = 'Y' AND n.f_or_r = #{forR,jdbcType=VARCHAR}
+    <if test="category!= null and category!= ''">
+      AND n.category = #{category,jdbcType=VARCHAR}
+    </if>
+    <if test="startTime!= null">
+       AND date(#{startTime,jdbcType=TIMESTAMP}) >= date(n.start_time)
+    </if>
+    <if test="endTime!= null">
+      AND date(#{endTime,jdbcType=TIMESTAMP}) >= date(n.end_time)
+    </if>
+    <if test="address!= null and address!= ''">
+      AND n.address = #{address,jdbcType=VARCHAR}
+    </if>
+    <if test="description!= null and description!= ''">
+      <bind name="description" value="'%' + description + '%'" />
+      AND n.description like  #{description,jdbcType=VARCHAR}
+    </if>
+  </select>
+  <select id="getNoticeByUserId" parameterType="String" resultType="com.ck.paper.notice.po.Notice">
+    select n.id id , n.title title , n.category category , n.start_time startTime , n.address address,
+           n.amount amount, n.expiration_date expirationDate , n.description description ,n.delete_password delete_password ,
+           n.picture picture , n.user_id user_id , n.is_active is_active , n.end_time endTime, n.f_or_r forR
+    from notice n where n.is_active = 'Y' and n.user_id = #{userId,jdbcType=VARCHAR}
+  </select>
+  <select id="getPassword" resultType="java.lang.String">
+    select delete_password from notice where id = #{id,jdbcType=VARCHAR}
+  </select>
+  <update id="deleteByPrimaryKey" parameterType="java.lang.String">
+    update notice set is_active = 'N', be_solved = 'Y'
+    where id = #{id,jdbcType=VARCHAR}
+  </update>
+  <update id="deleteByIdAndPassword">
+    update notice set is_active = 'N' where id = #{id,jdbcType=VARCHAR} and delete_password = #{deletePassword,jdbcType=VARCHAR}
+  </update>
+  <insert id="insert" keyColumn="id" keyProperty="id" parameterType="com.ck.paper.notice.po.Notice" useGeneratedKeys="true">
+    insert into notice (title, category, start_time, 
+      address, amount, expiration_date, 
+      description, delete_password, picture, 
+      user_id, is_active, end_time, create_time, update_time, f_or_r
+      )
+    values (#{title,jdbcType=VARCHAR}, #{category,jdbcType=VARCHAR}, #{startTime,jdbcType=TIMESTAMP}, 
+      #{address,jdbcType=VARCHAR}, #{amount,jdbcType=INTEGER}, #{expirationDate,jdbcType=INTEGER}, 
+      #{description,jdbcType=VARCHAR}, #{deletePassword,jdbcType=VARCHAR}, #{picture,jdbcType=VARCHAR}, 
+      #{userId,jdbcType=VARCHAR}, #{isActive,jdbcType=VARCHAR}, #{endTime,jdbcType=TIMESTAMP},
+            #{createTime,jdbcType=TIMESTAMP}, #{updateTime,jdbcType=TIMESTAMP}, #{forR,jdbcType=VARCHAR}
+      )
+  </insert>
+  <insert id="insertSelective" keyColumn="id" keyProperty="id" parameterType="com.ck.paper.notice.po.Notice" useGeneratedKeys="true">
+    insert into notice
+    <trim prefix="(" suffix=")" suffixOverrides=",">
+      <if test="title != null">
+        title,
+      </if>
+      <if test="category != null">
+        category,
+      </if>
+      <if test="startTime != null">
+        start_time,
+      </if>
+      <if test="address != null">
+        address,
+      </if>
+      <if test="amount != null">
+        amount,
+      </if>
+      <if test="expirationDate != null">
+        expiration_date,
+      </if>
+      <if test="description != null">
+        description,
+      </if>
+      <if test="deletePassword != null">
+        delete_password,
+      </if>
+      <if test="picture != null">
+        picture,
+      </if>
+      <if test="userId != null">
+        user_id,
+      </if>
+      <if test="isActive != null">
+        is_active,
+      </if>
+      <if test="endTime != null">
+        end_time,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides=",">
+      <if test="title != null">
+        #{title,jdbcType=VARCHAR},
+      </if>
+      <if test="category != null">
+        #{category,jdbcType=VARCHAR},
+      </if>
+      <if test="startTime != null">
+        #{startTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="address != null">
+        #{address,jdbcType=VARCHAR},
+      </if>
+      <if test="amount != null">
+        #{amount,jdbcType=INTEGER},
+      </if>
+      <if test="expirationDate != null">
+        #{expirationDate,jdbcType=INTEGER},
+      </if>
+      <if test="description != null">
+        #{description,jdbcType=VARCHAR},
+      </if>
+      <if test="deletePassword != null">
+        #{deletePassword,jdbcType=VARCHAR},
+      </if>
+      <if test="picture != null">
+        #{picture,jdbcType=VARCHAR},
+      </if>
+      <if test="userId != null">
+        #{userId,jdbcType=VARCHAR},
+      </if>
+      <if test="isActive != null">
+        #{isActive,jdbcType=VARCHAR},
+      </if>
+      <if test="endTime != null">
+        #{endTime,jdbcType=TIMESTAMP},
+      </if>
+    </trim>
+  </insert>
+    <update id="updateByPrimaryKeySelective" parameterType="com.ck.paper.notice.po.Notice">
+    update notice
+    <set>
+      <if test="title != null">
+        title = #{title,jdbcType=VARCHAR},
+      </if>
+      <if test="category != null">
+        category = #{category,jdbcType=VARCHAR},
+      </if>
+      <if test="startTime != null">
+        start_time = #{startTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="address != null">
+        address = #{address,jdbcType=VARCHAR},
+      </if>
+      <if test="amount != null">
+        amount = #{amount,jdbcType=INTEGER},
+      </if>
+      <if test="expirationDate != null">
+        expiration_date = #{expirationDate,jdbcType=INTEGER},
+      </if>
+      <if test="description != null">
+        description = #{description,jdbcType=VARCHAR},
+      </if>
+      <if test="deletePassword != null">
+        delete_password = #{deletePassword,jdbcType=VARCHAR},
+      </if>
+      <if test="picture != null">
+        picture = #{picture,jdbcType=VARCHAR},
+      </if>
+      <if test="userId != null">
+        user_id = #{userId,jdbcType=VARCHAR},
+      </if>
+      <if test="isActive != null">
+        is_active = #{isActive,jdbcType=VARCHAR},
+      </if>
+      <if test="endTime != null">
+        end_time = #{endTime,jdbcType=TIMESTAMP},
+      </if>
+    </set>
+    where id = #{id,jdbcType=VARCHAR}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.ck.paper.notice.po.Notice">
+    update notice
+    set title = #{title,jdbcType=VARCHAR},
+      category = #{category,jdbcType=VARCHAR},
+      start_time = #{startTime,jdbcType=TIMESTAMP},
+      address = #{address,jdbcType=VARCHAR},
+      amount = #{amount,jdbcType=INTEGER},
+      expiration_date = #{expirationDate,jdbcType=INTEGER},
+      description = #{description,jdbcType=VARCHAR},
+      delete_password = #{deletePassword,jdbcType=VARCHAR},
+      picture = #{picture,jdbcType=VARCHAR},
+      user_id = #{userId,jdbcType=VARCHAR},
+      is_active = #{isActive,jdbcType=VARCHAR},
+      end_time = #{endTime,jdbcType=TIMESTAMP}
+    where id = #{id,jdbcType=VARCHAR}
+  </update>
+</mapper>

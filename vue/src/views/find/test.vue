@@ -96,7 +96,9 @@
     </el-header>
     <el-header class="el-header1">
       <!-- 关于诚信的名言警句 -->
-      <div style="text-align: left">{{honestyWord}}</div>
+      <div style="text-align: left" v-model="honestyWord">
+        {{honestyWord}}
+      </div>
     </el-header>
     <el-container>
       <el-aside style="height: 500px" width="400px">
@@ -319,8 +321,8 @@ export default {
     setTimeout(this.getHonestyWord, 1000)
     setTimeout(this.getDynamic, 1000)
     setTimeout(this.getThankWord, 1000)
-    setInterval(this.getHonestyWord, 600000)
-    setInterval(this.getDynamic, 600000)
+    setInterval(this.getHonestyWord, 1000)
+    setInterval(this.getDynamic, 6000)
     setInterval(this.getThankWord, 6000)
   }
 }

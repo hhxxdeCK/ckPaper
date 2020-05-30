@@ -38,6 +38,19 @@
             <i class="el-icon-user"></i>
             <span slot="title">用户管理</span>
           </el-menu-item>
+          <el-menu-item index="role">
+            <i class="el-icon-setting"></i>
+            <span slot="title">权限管理</span>
+          </el-menu-item>
+          <el-submenu index="4">
+            <template slot="title">
+              <i class="el-icon-s-tools"></i>
+              <span>首页管理</span>
+            </template>
+            <el-menu-item index="letter">感谢信管理</el-menu-item>
+            <el-menu-item index="word">名言警句管理</el-menu-item>
+            <el-menu-item index="link">链接管理</el-menu-item>
+          </el-submenu>
         </el-menu>
       </el-aside>
       <el-container class="home_right">
@@ -81,20 +94,20 @@
         <el-card :body-style="{ padding: '20px' }">
           <el-form :model="item" label-width="100px">
             <el-form-item label="标题">
-              <el-input v-model="item.title" :disabled="true"></el-input>
+              <el-input v-model="item.title" :disabled="updateDialogFormVisible"></el-input>
             </el-form-item>
             <el-form-item label="失物类别">
-              <el-input v-model="item.category" :disabled="true"></el-input>
+              <el-input v-model="item.category" :disabled="updateDialogFormVisible"></el-input>
             </el-form-item>
             <el-form-item label="丢失地点">
-              <el-input v-model="item.address" :disabled="true"></el-input>
+              <el-input v-model="item.address" :disabled="updateDialogFormVisible"></el-input>
             </el-form-item>
             <el-form-item label="悬赏金额">
-              <el-input v-model="item.amount" :disabled="true"></el-input>
+              <el-input v-model="item.amount" :disabled="updateDialogFormVisible"></el-input>
             </el-form-item>
             <el-form-item label="拾获时间">
               <el-date-picker
-                :disabled="true"
+                :disabled="updateDialogFormVisible"
                 :value="[item.startTime,item.endTime]"
                 type="datetimerange"
                 range-separator="至 "
@@ -102,8 +115,8 @@
                 end-placeholder="结束日期"
               ></el-date-picker>
             </el-form-item>
-            <el-form-item label="详细描述" :disabled="true">
-              <el-input v-model="item.description" :disabled="true"></el-input>
+            <el-form-item label="详细描述" :disabled="updateDialogFormVisible">
+              <el-input v-model="item.description" :disabled="updateDialogFormVisible"></el-input>
             </el-form-item>
             <el-popover placement="top" width="160" v-model="item.visibleDel">
               <p>请输入删除密码:</p>
@@ -111,9 +124,10 @@
                 <el-input v-model="deletePassword" :show-password="true" :clearable="true"></el-input>
                 <el-button type="primary" size="mini" @click="deleteNotice(item.id)">确定</el-button>
               </div>
-              <el-button slot="reference" @click="item.visibleDel = true">删除</el-button>
+              <el-button slot="reference" type="danger" @click="item.visibleDel = true">删除</el-button>
             </el-popover>
-            <el-button @click="addDynamic(index,item.id,item.forR)">已解决</el-button>
+            <el-button type="success" @click="addDynamic(index,item.id,item.forR)">已解决</el-button>
+            <el-button type="warning" @click="updateNotice(index,item.id,item.forR)">修改</el-button>
           </el-form>
           <div slot="footer" class="dialog-footer">
             <el-button type="primary">确 定</el-button>
@@ -176,6 +190,7 @@ export default {
       ],
       searchKeyWord: '',
       dialogFormVisible: false,
+      updateDialogFormVisible: true,
       backForm: [],
       deletePassword: '',
       visible: false,
@@ -215,6 +230,9 @@ export default {
     }
   },
   methods: {
+    updateNotice(){
+      this.updateDialogFormVisible = false;
+    },
     getUserInfo() {
       this.$store.dispatch('GetInfo', this.loginForm).then(data => {
         this.person = data.userPermission.nickname
@@ -337,6 +355,11 @@ export default {
     this.getUserInfo()
     this.getHonestyWord()
     console.log(this.$route)
+  },
+  mounted() {
+    setInterval(this.getHonestyWord, 300000)
+    setInterval(this.getDynamic, 600000)
+    setInterval(this.getThankWord, 600000)
   }
 }
 </script>
