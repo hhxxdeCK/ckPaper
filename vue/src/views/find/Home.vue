@@ -312,8 +312,7 @@ export default {
           id: id
         }
       }).then(res => {
-        // this.persionalSpace()
-        // this.backForm.slice(index,1)
+        this.$message.success("您的启事已标记为解决状态")
       })
     },
     writeLetter() {

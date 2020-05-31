@@ -258,7 +258,7 @@ export default {
           form.picture = this.base64
           this.$axios({
             method: 'put',
-            url: 'http://123.56.66.230:8083/notice',
+            url: 'http://123.56.66.230:7777/core/notice',
             data: form
           })
             .then(response => {

@@ -126,6 +126,7 @@
           create: '新建用户'
         },
         tempUser: {
+          id: '',
           username: '',
           password: '',
           nickname: '',
@@ -214,6 +215,7 @@
         this.dialogFormVisible = true
       },
       createUser() {
+        this.tempUser.id = '23'
         //添加新用户
         this.api({
           url: "/user/addUser",

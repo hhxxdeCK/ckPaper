@@ -1,199 +1,60 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="fd2618aa-e51a-47af-bea9-5d8e7438a3ff" name="Default Changelist" comment="修改项目访问地址为服务器网关">
-      <change afterPath="$PROJECT_DIR$/../.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../.idea/ckPaper.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ckpaper_back/.idea/dataSources/c96d084e-7197-43c1-9172-5ca151ac8d9b.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ckpaper_back/.idea/dataSources/c96d084e-7197-43c1-9172-5ca151ac8d9b/storage_v2/_src_/schema/demo.4_0uAA.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ckpaper_back/.idea/dataSources/c96d084e-7197-43c1-9172-5ca151ac8d9b/storage_v2/_src_/schema/demo.4_0uAA.zip" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ckpaper_back/.idea/dataSources/c96d084e-7197-43c1-9172-5ca151ac8d9b/storage_v2/_src_/schema/information_schema.FNRwLQ.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ckpaper_back/.idea/libraries/Maven__com_google_code_gson_gson_2_8_5.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ckpaper_back/.idea/libraries/Maven__com_netflix_hystrix_hystrix_javanica_1_5_18.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ckpaper_back/.idea/libraries/Maven__com_netflix_hystrix_hystrix_metrics_event_stream_1_5_18.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ckpaper_back/.idea/libraries/Maven__com_netflix_hystrix_hystrix_serialization_1_5_18.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ckpaper_back/.idea/libraries/Maven__com_netflix_zuul_zuul_core_1_3_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ckpaper_back/.idea/libraries/Maven__commons_fileupload_commons_fileupload_1_4.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ckpaper_back/.idea/libraries/Maven__commons_io_commons_io_2_4.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ckpaper_back/.idea/libraries/Maven__io_reactivex_rxjava_reactive_streams_1_2_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ckpaper_back/.idea/libraries/Maven__org_apache_commons_commons_lang3_3_9.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ckpaper_back/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_netflix_zuul_2_2_2_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ckpaper_back/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_starter_netflix_hystrix_2_2_2_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ckpaper_back/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_starter_netflix_zuul_2_2_2_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ckpaper_back/.idea/libraries/eureka_0_0_1_SNAPSHOT.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ckpaper_back/.idea/libraries/schema.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ckpaper_back/.idea/libraries/zuul_0_0_1_SNAPSHOT.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ckpaper_back/Eureka-Service/target/classes/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ckpaper_back/Eureka-Service/target/classes/com/ck/paper/EurekaServerApplication.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ckpaper_back/Eureka-Service/target/eureka-0.0.1-SNAPSHOT.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ckpaper_back/Eureka-Service/target/eureka-0.0.1-SNAPSHOT.jar.original" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ckpaper_back/Eureka-Service/target/maven-archiver/pom.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ckpaper_back/Eureka-Service/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ckpaper_back/Eureka-Service/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ckpaper_back/auth/target/auth-0.0.1-SNAPSHOT.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ckpaper_back/auth/target/auth-0.0.1-SNAPSHOT.jar.original" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ckpaper_back/auth/target/classes/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ckpaper_back/auth/target/classes/com/ck/paper/AuthApplication.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ckpaper_back/auth/target/classes/com/ck/paper/config/shiro/AjaxPermissionsAuthorizationFilter.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ckpaper_back/auth/target/classes/com/ck/paper/config/shiro/ShiroConfiguration.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ckpaper_back/auth/target/classes/com/ck/paper/config/shiro/UserRealm.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ckpaper_back/auth/target/classes/com/ck/paper/config/system/DefaultView.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ckpaper_back/auth/target/classes/com/ck/paper/controller/ArticleController.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ckpaper_back/auth/target/classes/com/ck/paper/controller/LoginController.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ckpaper_back/auth/target/classes/com/ck/paper/controller/UserController.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ckpaper_back/auth/target/classes/com/ck/paper/dao/ArticleDao.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ckpaper_back/auth/target/classes/com/ck/paper/dao/LoginDao.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ckpaper_back/auth/target/classes/com/ck/paper/dao/PermissionDao.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ckpaper_back/auth/target/classes/com/ck/paper/dao/SysUserDao.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ckpaper_back/auth/target/classes/com/ck/paper/dao/UserDao.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ckpaper_back/auth/target/classes/com/ck/paper/po/SysUser.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ckpaper_back/auth/target/classes/com/ck/paper/service/ArticleService.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ckpaper_back/auth/target/classes/com/ck/paper/service/LoginService.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ckpaper_back/auth/target/classes/com/ck/paper/service/PermissionService.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ckpaper_back/auth/target/classes/com/ck/paper/service/UserService.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ckpaper_back/auth/target/classes/com/ck/paper/service/impl/ArticleServiceImpl.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ckpaper_back/auth/target/classes/com/ck/paper/service/impl/LoginServiceImpl.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ckpaper_back/auth/target/classes/com/ck/paper/service/impl/PermissionServiceImpl.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ckpaper_back/auth/target/classes/com/ck/paper/service/impl/UserServiceImpl.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ckpaper_back/auth/target/classes/logback.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ckpaper_back/auth/target/classes/mapper/ArticleMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ckpaper_back/auth/target/classes/mapper/LoginMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ckpaper_back/auth/target/classes/mapper/PermissionMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ckpaper_back/auth/target/classes/mapper/SysUserDao.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ckpaper_back/auth/target/classes/mapper/UserMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ckpaper_back/auth/target/classes/rebel.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ckpaper_back/auth/target/maven-archiver/pom.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ckpaper_back/auth/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ckpaper_back/auth/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ckpaper_back/common/target/classes/com/ck/paper/emum/ResultEnum.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ckpaper_back/common/target/classes/com/ck/paper/util/CommonUtil.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ckpaper_back/common/target/classes/com/ck/paper/util/MD5Utils.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ckpaper_back/common/target/classes/com/ck/paper/util/Result.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ckpaper_back/common/target/classes/com/ck/paper/util/ResultUtil.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ckpaper_back/common/target/classes/com/ck/paper/util/StringTools.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ckpaper_back/common/target/classes/com/ck/paper/util/TimeUtil.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ckpaper_back/common/target/classes/com/ck/paper/util/constants/Constants.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ckpaper_back/common/target/classes/com/ck/paper/util/constants/ErrorEnum.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ckpaper_back/common/target/classes/com/ck/paper/util/exception/CommonJsonException.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ckpaper_back/common/target/classes/com/ck/paper/util/exception/GlobalExceptionHandler.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ckpaper_back/common/target/classes/com/ck/paper/util/exception/MainsiteErrorController.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ckpaper_back/common/target/classes/com/ck/paper/util/model/One2Many.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ckpaper_back/core/src/test/test.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ckpaper_back/core/target/classes/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ckpaper_back/core/target/classes/com/ck/paper/CoreApplication.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ckpaper_back/core/target/classes/com/ck/paper/config/GlobalCorsConfig.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ckpaper_back/core/target/classes/com/ck/paper/dynamic/controller/DynamicController.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ckpaper_back/core/target/classes/com/ck/paper/dynamic/dao/DynamicDao.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ckpaper_back/core/target/classes/com/ck/paper/dynamic/po/Dynamic.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ckpaper_back/core/target/classes/com/ck/paper/dynamic/service/DynamicService.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ckpaper_back/core/target/classes/com/ck/paper/dynamic/service/DynamicServiceImpl.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ckpaper_back/core/target/classes/com/ck/paper/feign/UserFeign.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ckpaper_back/core/target/classes/com/ck/paper/feign/config/FeignHeadConfiguration.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ckpaper_back/core/target/classes/com/ck/paper/honestyWord/controller/honestyWordController.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ckpaper_back/core/target/classes/com/ck/paper/honestyWord/dao/HonestyWordDao.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ckpaper_back/core/target/classes/com/ck/paper/honestyWord/po/HonestyWord.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ckpaper_back/core/target/classes/com/ck/paper/honestyWord/service/HonestyWordService.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ckpaper_back/core/target/classes/com/ck/paper/honestyWord/service/HonestyWordServiceImpl.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ckpaper_back/core/target/classes/com/ck/paper/letter/controller/LetterController.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ckpaper_back/core/target/classes/com/ck/paper/letter/dao/ThankLetterDao.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ckpaper_back/core/target/classes/com/ck/paper/letter/po/ThankLetter.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ckpaper_back/core/target/classes/com/ck/paper/letter/service/LetterService.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ckpaper_back/core/target/classes/com/ck/paper/letter/service/LetterServiceImpl.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ckpaper_back/core/target/classes/com/ck/paper/notice/controller/NoticeController.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ckpaper_back/core/target/classes/com/ck/paper/notice/controller/PicturesController.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ckpaper_back/core/target/classes/com/ck/paper/notice/dao/NoticeDao.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ckpaper_back/core/target/classes/com/ck/paper/notice/po/Notice.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ckpaper_back/core/target/classes/com/ck/paper/notice/service/NoticeService.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ckpaper_back/core/target/classes/com/ck/paper/notice/service/NoticeServiceImpl.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ckpaper_back/core/target/classes/com/ck/paper/notice/service/PicturesService.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ckpaper_back/core/target/classes/com/ck/paper/notice/service/PicturesServiceImpl.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ckpaper_back/core/target/classes/logback.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ckpaper_back/core/target/classes/mappers/DynamicDao.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ckpaper_back/core/target/classes/mappers/HonestyWordDao.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ckpaper_back/core/target/classes/mappers/NoticeDao.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ckpaper_back/core/target/classes/mappers/ThankLetterDao.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ckpaper_back/core/target/classes/rebel.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ckpaper_back/core/target/core-0.0.1-SNAPSHOT.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ckpaper_back/core/target/core-0.0.1-SNAPSHOT.jar.original" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ckpaper_back/core/target/maven-archiver/pom.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ckpaper_back/core/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ckpaper_back/core/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ckpaper_back/core/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ckpaper_back/core/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ckpaper_back/core/target/surefire-reports/TEST-com.ck.paper.DemoApplicationTests.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ckpaper_back/core/target/surefire-reports/TEST-com.ck.paper.time.timeTest.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ckpaper_back/core/target/surefire-reports/com.ck.paper.DemoApplicationTests.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ckpaper_back/core/target/surefire-reports/com.ck.paper.time.timeTest.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ckpaper_back/core/target/test-classes/com/ck/paper/DemoApplicationTests.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ckpaper_back/core/target/test-classes/com/ck/paper/time/timeTest.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ckpaper_front/.idea/ckpaper_front.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ckpaper_front/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ckpaper_front/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ckpaper_front/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/views/find/HomeManagement.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ckpaper_back/.idea/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../ckpaper_back/.idea/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ckpaper_back/.idea/.name" beforeDir="false" afterPath="$PROJECT_DIR$/../ckpaper_back/.idea/.name" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ckpaper_back/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../ckpaper_back/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ckpaper_back/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../ckpaper_back/.idea/dataSources.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ckpaper_back/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../ckpaper_back/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ckpaper_back/.idea/free-mybatis-generator-config.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ckpaper_back/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ckpaper_back/.idea/libraries/Maven__com_fasterxml_jackson_dataformat_jackson_dataformat_xml_2_10_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ckpaper_back/.idea/libraries/Maven__com_fasterxml_jackson_module_jackson_module_jaxb_annotations_2_10_2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../ckpaper_back/.idea/libraries/Maven__com_fasterxml_jackson_module_jackson_module_afterburner_2_10_2.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ckpaper_back/.idea/libraries/Maven__com_sun_istack_istack_commons_runtime_3_0_8.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ckpaper_back/.idea/libraries/Maven__com_sun_jersey_jersey_server_1_19_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ckpaper_back/.idea/libraries/Maven__com_sun_jersey_jersey_servlet_1_19_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ckpaper_back/.idea/libraries/Maven__com_sun_xml_fastinfoset_FastInfoset_1_2_16.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ckpaper_back/.idea/libraries/Maven__org_freemarker_freemarker_2_3_29.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ckpaper_back/.idea/libraries/Maven__org_glassfish_jaxb_jaxb_runtime_2_3_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ckpaper_back/.idea/libraries/Maven__org_glassfish_jaxb_txw2_2_3_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ckpaper_back/.idea/libraries/Maven__org_jvnet_staxex_stax_ex_1_8_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ckpaper_back/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_freemarker_2_2_5_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ckpaper_back/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_netflix_eureka_server_2_2_2_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ckpaper_back/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_starter_eureka_unknown.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../ckpaper_back/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_starter_feign_1_4_7_RELEASE.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ckpaper_back/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_starter_feign_unknown.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../ckpaper_back/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_starter_eureka_1_4_7_RELEASE.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ckpaper_back/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_starter_netflix_eureka_server_2_2_2_RELEASE.xml" beforeDir="false" />
+    <list default="true" id="4a9f3288-05a6-4468-bd63-fea13ff9a14b" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../ckpaper_back/.idea/GrepConsole.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ckpaper_back/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ckpaper_back/.idea/qaplug_profiles.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../ckpaper_back/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../ckpaper_back/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ckpaper_back/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../ckpaper_back/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ckpaper_back/.idea/uiDesigner.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ckpaper_back/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../ckpaper_back/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../ckpaper_back/Eureka-Service/Eureka-Service.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../ckpaper_back/Eureka-Service/Eureka-Service.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ckpaper_back/Eureka-Service/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../ckpaper_back/Eureka-Service/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ckpaper_back/auth/auth.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../ckpaper_back/auth/auth.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ckpaper_back/auth/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../ckpaper_back/auth/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ckpaper_back/auth/src/main/java/com/ck/paper/dao/ArticleDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ckpaper_back/auth/src/main/java/com/ck/paper/dao/ArticleDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ckpaper_back/auth/src/main/java/com/ck/paper/service/impl/PermissionServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ckpaper_back/auth/src/main/java/com/ck/paper/service/impl/PermissionServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../ckpaper_back/auth/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../ckpaper_back/auth/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ckpaper_back/ckpaper_back.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../ckpaper_back/paper.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ckpaper_back/common/common.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../ckpaper_back/common/common.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ckpaper_back/core/core.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../ckpaper_back/core/core.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ckpaper_back/core/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../ckpaper_back/core/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ckpaper_back/core/src/main/java/com/ck/paper/dynamic/controller/DynamicController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ckpaper_back/core/src/main/java/com/ck/paper/dynamic/controller/DynamicController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ckpaper_back/core/src/main/java/com/ck/paper/feign/UserFeign.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ckpaper_back/core/src/main/java/com/ck/paper/feign/UserFeign.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ckpaper_back/auth/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../ckpaper_back/auth/target/classes/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ckpaper_back/auth/target/classes/com/ck/paper/config/shiro/AjaxPermissionsAuthorizationFilter.class" beforeDir="false" afterPath="$PROJECT_DIR$/../ckpaper_back/auth/target/classes/com/ck/paper/config/shiro/AjaxPermissionsAuthorizationFilter.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ckpaper_back/auth/target/classes/com/ck/paper/config/shiro/UserRealm.class" beforeDir="false" afterPath="$PROJECT_DIR$/../ckpaper_back/auth/target/classes/com/ck/paper/config/shiro/UserRealm.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ckpaper_back/auth/target/classes/com/ck/paper/dao/ArticleDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/../ckpaper_back/auth/target/classes/com/ck/paper/dao/ArticleDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ckpaper_back/auth/target/classes/com/ck/paper/po/SysUser.class" beforeDir="false" afterPath="$PROJECT_DIR$/../ckpaper_back/auth/target/classes/com/ck/paper/po/SysUser.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ckpaper_back/auth/target/classes/com/ck/paper/service/impl/LoginServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/../ckpaper_back/auth/target/classes/com/ck/paper/service/impl/LoginServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ckpaper_back/auth/target/classes/com/ck/paper/service/impl/PermissionServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/../ckpaper_back/auth/target/classes/com/ck/paper/service/impl/PermissionServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ckpaper_back/auth/target/classes/com/ck/paper/service/impl/UserServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/../ckpaper_back/auth/target/classes/com/ck/paper/service/impl/UserServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ckpaper_back/common/target/classes/com/ck/paper/util/CommonUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/../ckpaper_back/common/target/classes/com/ck/paper/util/CommonUtil.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ckpaper_back/common/target/classes/com/ck/paper/util/MD5Utils.class" beforeDir="false" afterPath="$PROJECT_DIR$/../ckpaper_back/common/target/classes/com/ck/paper/util/MD5Utils.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ckpaper_back/common/target/classes/com/ck/paper/util/exception/GlobalExceptionHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/../ckpaper_back/common/target/classes/com/ck/paper/util/exception/GlobalExceptionHandler.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../ckpaper_back/core/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../ckpaper_back/core/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ckpaper_back/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../ckpaper_back/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ckpaper_back/zuul/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../ckpaper_back/zuul/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ckpaper_back/zuul/src/main/java/com/htffund/oms/zuul/ZuulServerApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ckpaper_back/zuul/src/main/java/com/ck/paper/ZuulServerApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ckpaper_back/zuul/src/main/java/com/htffund/oms/zuul/common/utils/EncryptSHA.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ckpaper_back/zuul/src/main/java/com/htffund/oms/zuul/common/utils/JWTUtil.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ckpaper_back/zuul/src/main/java/com/htffund/oms/zuul/filter/LoginFilter.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ckpaper_back/zuul/src/main/resources/application.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ckpaper_back/zuul/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../ckpaper_back/zuul/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ckpaper_back/zuul/src/main/resources/bootstrap.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ckpaper_back/zuul/src/main/resources/logback-spring.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../ckpaper_back/zuul/src/main/resources/logback-spring.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ckpaper_back/core/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../ckpaper_back/core/target/classes/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ckpaper_back/core/target/classes/com/ck/paper/dynamic/controller/DynamicController.class" beforeDir="false" afterPath="$PROJECT_DIR$/../ckpaper_back/core/target/classes/com/ck/paper/dynamic/controller/DynamicController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ckpaper_back/core/target/classes/com/ck/paper/dynamic/po/Dynamic.class" beforeDir="false" afterPath="$PROJECT_DIR$/../ckpaper_back/core/target/classes/com/ck/paper/dynamic/po/Dynamic.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ckpaper_back/core/target/classes/com/ck/paper/feign/config/FeignHeadConfiguration.class" beforeDir="false" afterPath="$PROJECT_DIR$/../ckpaper_back/core/target/classes/com/ck/paper/feign/config/FeignHeadConfiguration.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ckpaper_back/core/target/classes/com/ck/paper/honestyWord/po/HonestyWord.class" beforeDir="false" afterPath="$PROJECT_DIR$/../ckpaper_back/core/target/classes/com/ck/paper/honestyWord/po/HonestyWord.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ckpaper_back/core/target/classes/com/ck/paper/letter/po/ThankLetter.class" beforeDir="false" afterPath="$PROJECT_DIR$/../ckpaper_back/core/target/classes/com/ck/paper/letter/po/ThankLetter.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ckpaper_back/core/target/classes/com/ck/paper/notice/controller/NoticeController.class" beforeDir="false" afterPath="$PROJECT_DIR$/../ckpaper_back/core/target/classes/com/ck/paper/notice/controller/NoticeController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ckpaper_back/core/target/classes/com/ck/paper/notice/po/Notice.class" beforeDir="false" afterPath="$PROJECT_DIR$/../ckpaper_back/core/target/classes/com/ck/paper/notice/po/Notice.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ckpaper_back/core/target/classes/com/ck/paper/notice/service/PicturesServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/../ckpaper_back/core/target/classes/com/ck/paper/notice/service/PicturesServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vue.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vue.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/router/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/router/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/config/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/views/find/FindThingsPage.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/find/FindThingsPage.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/views/find/Home.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/find/Home.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/views/find/Homepage.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/find/Homepage.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/views/find/RecruitmentPage.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/find/RecruitmentPage.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/views/find/test.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/find/test.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/views/login/index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/login/index.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/views/user/role.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/user/role.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/views/user/user.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/user/user.vue" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -201,302 +62,80 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="DatabaseView">
-    <option name="SHOW_INTERMEDIATE" value="true" />
-    <option name="GROUP_DATA_SOURCES" value="true" />
-    <option name="GROUP_SCHEMA" value="true" />
-    <option name="GROUP_CONTENTS" value="false" />
-    <option name="SORT_POSITIONED" value="false" />
-    <option name="SHOW_EMPTY_GROUPS" value="false" />
-    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
-    <option name="HIDDEN_KINDS">
-      <set />
-    </option>
-    <expand />
-    <select />
-  </component>
-  <component name="DefaultGradleProjectSettings">
-    <option name="isMigrated" value="true" />
-  </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="JavaScript File" />
-        <option value="Vue Single File Component" />
-      </list>
-    </option>
-  </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
-    <option name="UPDATE_TYPE" value="MERGE" />
-  </component>
-  <component name="GithubPullRequestsUISettings">
-    <option name="hiddenUrls">
-      <set>
-        <option value="https://github.com/Heeexy/SpringBoot-Shiro-Vue.git" />
-      </set>
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$/.." value="master" />
+      </map>
     </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
-  <component name="ProjectId" id="1Z1G3pB3XPKt6IK26yZeGwoL8PP" />
-  <component name="ProjectLevelVcsManager">
-    <ConfirmationsSetting value="2" id="Add" />
-  </component>
+  <component name="ProjectId" id="1ceXyxhYxkCzJZR2NlvO3LWNMj7" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
-    <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
-    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../ckpaper_back" />
     <property name="node.js.detected.package.eslint" value="true" />
-    <property name="node.js.detected.package.standard" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
-    <property name="node.js.path.for.package.standard" value="project" />
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
-    <property name="node.js.selected.package.standard" value="" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
-    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
-    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="restartRequiresConfirmation" value="false" />
-    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
-    <property name="ts.external.directory.path" value="C:\软件\idea\IntelliJ IDEA 2019.1.3\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
-  </component>
-  <component name="RebelAgentSelection">
-    <selection>jr</selection>
-  </component>
-  <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\ck\Documents\GitHub\SpringBoot-Shiro-Vue\vue\src\assets" />
-      <recent name="C:\Users\ck\Documents\GitHub\SpringBoot-Shiro-Vue\vue\src\views\find" />
-      <recent name="C:\Users\ck\Documents\GitHub\SpringBoot-Shiro-Vue\vue" />
-    </key>
-  </component>
-  <component name="RestServicesNavigator">
-    <treeState>
-      <expand />
-      <select />
-    </treeState>
-  </component>
-  <component name="RunManager">
-    <configuration default="true" type="js.build_tools.npm">
-      <package-json value="$PROJECT_DIR$/package.json" />
-      <command value="run" />
-      <scripts>
-        <script value="dev" />
-      </scripts>
-      <node-interpreter value="project" />
-      <envs />
-      <method v="2" />
-    </configuration>
-    <configuration name="dev" type="js.build_tools.npm" nameIsGenerated="true">
-      <package-json value="$PROJECT_DIR$/package.json" />
-      <command value="run" />
-      <scripts>
-        <script value="dev" />
-      </scripts>
-      <node-interpreter value="project" />
-      <envs />
-      <method v="2" />
-    </configuration>
   </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="fd2618aa-e51a-47af-bea9-5d8e7438a3ff" name="Default Changelist" comment="" />
-      <created>1583999348419</created>
+      <changelist id="4a9f3288-05a6-4468-bd63-fea13ff9a14b" name="Default Changelist" comment="" />
+      <created>1590890290926</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1583999348419</updated>
-      <workItem from="1583999365843" duration="2896000" />
-      <workItem from="1584009879605" duration="328000" />
-      <workItem from="1584010979025" duration="6174000" />
-      <workItem from="1584019271248" duration="13877000" />
-      <workItem from="1584088241821" duration="12622000" />
-      <workItem from="1584174284757" duration="85714000" />
-      <workItem from="1584617551118" duration="3290000" />
-      <workItem from="1584620960770" duration="727000" />
-      <workItem from="1584622102994" duration="2931000" />
-      <workItem from="1584722895373" duration="12640000" />
-      <workItem from="1584972712240" duration="7353000" />
-      <workItem from="1585220718099" duration="3397000" />
-      <workItem from="1585338686468" duration="3356000" />
-      <workItem from="1585474259677" duration="594000" />
-      <workItem from="1585475176555" duration="7480000" />
-      <workItem from="1585498176566" duration="7408000" />
-      <workItem from="1585656363588" duration="16010000" />
-      <workItem from="1586012633954" duration="157000" />
-      <workItem from="1590802264722" duration="801000" />
-      <workItem from="1590803113244" duration="2941000" />
-      <workItem from="1590807391999" duration="293000" />
+      <updated>1590890290926</updated>
+      <workItem from="1590890296231" duration="8904000" />
     </task>
-    <task id="LOCAL-00001" summary="修改项目访问地址为服务器网关">
-      <created>1585477691459</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1585477691459</updated>
-    </task>
-    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="1" />
+    <option name="version" value="2" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
       <map>
         <entry key="MAIN">
           <value>
-            <State>
-              <option name="COLUMN_ORDER" />
-            </State>
+            <State />
           </value>
         </entry>
       </map>
     </option>
   </component>
-  <component name="VcsManagerConfiguration">
-    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="修改项目访问地址为服务器网关" />
-    <option name="LAST_COMMIT_MESSAGE" value="修改项目访问地址为服务器网关" />
-  </component>
   <component name="WindowStateProjectService">
-    <state x="589" y="198" key="#ESLint" timestamp="1584011962820">
-      <screen x="75" y="0" width="1845" height="1080" />
+    <state width="1638" height="414" key="GridCell.Tab.0.bottom" timestamp="1590890813086">
+      <screen x="72" y="0" width="3368" height="1440" />
     </state>
-    <state x="589" y="198" key="#ESLint/-1291.305.1291.768/75.0.1845.1080@75.0.1845.1080" timestamp="1584011962820" />
-    <state x="451" y="195" width="1092" height="712" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1584009954983">
-      <screen x="75" y="0" width="1845" height="1080" />
+    <state width="1638" height="414" key="GridCell.Tab.0.bottom/3498.143.1478.864/72.0.3368.1440@72.0.3368.1440" timestamp="1590890813086" />
+    <state width="1638" height="414" key="GridCell.Tab.0.center" timestamp="1590890813085">
+      <screen x="72" y="0" width="3368" height="1440" />
     </state>
-    <state x="451" y="195" width="1092" height="712" key="#com.intellij.execution.impl.EditConfigurationsDialog/-1291.305.1291.768/75.0.1845.1080@75.0.1845.1080" timestamp="1584009954983" />
-    <state x="343" y="134" key="CommitChangelistDialog2" timestamp="1585499639703">
-      <screen x="75" y="0" width="1845" height="1080" />
+    <state width="1638" height="414" key="GridCell.Tab.0.center/3498.143.1478.864/72.0.3368.1440@72.0.3368.1440" timestamp="1590890813085" />
+    <state width="1638" height="414" key="GridCell.Tab.0.left" timestamp="1590890813084">
+      <screen x="72" y="0" width="3368" height="1440" />
     </state>
-    <state x="343" y="134" key="CommitChangelistDialog2/-1291.305.1291.768/75.0.1845.1080@75.0.1845.1080" timestamp="1585499639703" />
-    <state x="167" y="92" width="1661" height="896" key="DiffContextDialog" timestamp="1585500822890">
-      <screen x="75" y="0" width="1845" height="1080" />
+    <state width="1638" height="414" key="GridCell.Tab.0.left/3498.143.1478.864/72.0.3368.1440@72.0.3368.1440" timestamp="1590890813084" />
+    <state width="1638" height="414" key="GridCell.Tab.0.right" timestamp="1590890813085">
+      <screen x="72" y="0" width="3368" height="1440" />
     </state>
-    <state x="167" y="92" width="1661" height="896" key="DiffContextDialog/-1291.305.1291.768/75.0.1845.1080@75.0.1845.1080" timestamp="1585500822890" />
-    <state x="777" y="295" key="FileChooserDialogImpl" timestamp="1586012787080">
-      <screen x="75" y="0" width="1845" height="1080" />
+    <state width="1638" height="414" key="GridCell.Tab.0.right/3498.143.1478.864/72.0.3368.1440@72.0.3368.1440" timestamp="1590890813085" />
+    <state x="616" y="450" width="596" height="536" key="find.popup" timestamp="1590903199232">
+      <screen x="72" y="0" width="3368" height="1440" />
     </state>
-    <state x="777" y="295" key="FileChooserDialogImpl/-1291.305.1291.768/75.0.1845.1080@75.0.1845.1080" timestamp="1586012787080" />
-    <state width="1270" height="115" key="GridCell.Tab.0.bottom" timestamp="1590806177700">
-      <screen x="75" y="0" width="1291" height="768" />
-    </state>
-    <state width="1323" height="265" key="GridCell.Tab.0.bottom/-1291.305.1291.768/75.0.1845.1080@-1291.305.1291.768" timestamp="1584177990351" />
-    <state width="1824" height="295" key="GridCell.Tab.0.bottom/-1291.305.1291.768/75.0.1845.1080@75.0.1845.1080" timestamp="1586012563634" />
-    <state width="1270" height="115" key="GridCell.Tab.0.bottom/75.0.1291.768@75.0.1291.768" timestamp="1590806177700" />
-    <state width="1270" height="115" key="GridCell.Tab.0.center" timestamp="1590806177700">
-      <screen x="75" y="0" width="1291" height="768" />
-    </state>
-    <state width="1323" height="265" key="GridCell.Tab.0.center/-1291.305.1291.768/75.0.1845.1080@-1291.305.1291.768" timestamp="1584177990351" />
-    <state width="1824" height="295" key="GridCell.Tab.0.center/-1291.305.1291.768/75.0.1845.1080@75.0.1845.1080" timestamp="1586012563633" />
-    <state width="1270" height="115" key="GridCell.Tab.0.center/75.0.1291.768@75.0.1291.768" timestamp="1590806177700" />
-    <state width="1270" height="115" key="GridCell.Tab.0.left" timestamp="1590806177699">
-      <screen x="75" y="0" width="1291" height="768" />
-    </state>
-    <state width="1323" height="265" key="GridCell.Tab.0.left/-1291.305.1291.768/75.0.1845.1080@-1291.305.1291.768" timestamp="1584177990351" />
-    <state width="1824" height="295" key="GridCell.Tab.0.left/-1291.305.1291.768/75.0.1845.1080@75.0.1845.1080" timestamp="1586012563633" />
-    <state width="1270" height="115" key="GridCell.Tab.0.left/75.0.1291.768@75.0.1291.768" timestamp="1590806177699" />
-    <state width="1270" height="115" key="GridCell.Tab.0.right" timestamp="1590806177700">
-      <screen x="75" y="0" width="1291" height="768" />
-    </state>
-    <state width="1323" height="265" key="GridCell.Tab.0.right/-1291.305.1291.768/75.0.1845.1080@-1291.305.1291.768" timestamp="1584177990351" />
-    <state width="1824" height="295" key="GridCell.Tab.0.right/-1291.305.1291.768/75.0.1845.1080@75.0.1845.1080" timestamp="1586012563633" />
-    <state width="1270" height="115" key="GridCell.Tab.0.right/75.0.1291.768@75.0.1291.768" timestamp="1590806177700" />
-    <state width="1802" height="325" key="GridCell.Tab.1.bottom" timestamp="1584376524525">
-      <screen x="75" y="0" width="1845" height="1080" />
-    </state>
-    <state width="1802" height="325" key="GridCell.Tab.1.bottom/-1291.305.1291.768/75.0.1845.1080@75.0.1845.1080" timestamp="1584376524525" />
-    <state width="1802" height="325" key="GridCell.Tab.1.center" timestamp="1584376524525">
-      <screen x="75" y="0" width="1845" height="1080" />
-    </state>
-    <state width="1802" height="325" key="GridCell.Tab.1.center/-1291.305.1291.768/75.0.1845.1080@75.0.1845.1080" timestamp="1584376524525" />
-    <state width="1802" height="325" key="GridCell.Tab.1.left" timestamp="1584376524525">
-      <screen x="75" y="0" width="1845" height="1080" />
-    </state>
-    <state width="1802" height="325" key="GridCell.Tab.1.left/-1291.305.1291.768/75.0.1845.1080@75.0.1845.1080" timestamp="1584376524525" />
-    <state width="1802" height="325" key="GridCell.Tab.1.right" timestamp="1584376524525">
-      <screen x="75" y="0" width="1845" height="1080" />
-    </state>
-    <state width="1802" height="325" key="GridCell.Tab.1.right/-1291.305.1291.768/75.0.1845.1080@75.0.1845.1080" timestamp="1584376524525" />
-    <state width="1802" height="325" key="GridCell.Tab.2.bottom" timestamp="1584376524526">
-      <screen x="75" y="0" width="1845" height="1080" />
-    </state>
-    <state width="1802" height="325" key="GridCell.Tab.2.bottom/-1291.305.1291.768/75.0.1845.1080@75.0.1845.1080" timestamp="1584376524526" />
-    <state width="1802" height="325" key="GridCell.Tab.2.center" timestamp="1584376524526">
-      <screen x="75" y="0" width="1845" height="1080" />
-    </state>
-    <state width="1802" height="325" key="GridCell.Tab.2.center/-1291.305.1291.768/75.0.1845.1080@75.0.1845.1080" timestamp="1584376524526" />
-    <state width="1802" height="325" key="GridCell.Tab.2.left" timestamp="1584376524526">
-      <screen x="75" y="0" width="1845" height="1080" />
-    </state>
-    <state width="1802" height="325" key="GridCell.Tab.2.left/-1291.305.1291.768/75.0.1845.1080@75.0.1845.1080" timestamp="1584376524526" />
-    <state width="1802" height="325" key="GridCell.Tab.2.right" timestamp="1584376524526">
-      <screen x="75" y="0" width="1845" height="1080" />
-    </state>
-    <state width="1802" height="325" key="GridCell.Tab.2.right/-1291.305.1291.768/75.0.1845.1080@75.0.1845.1080" timestamp="1584376524526" />
-    <state width="1802" height="325" key="GridCell.Tab.3.bottom" timestamp="1584376524527">
-      <screen x="75" y="0" width="1845" height="1080" />
-    </state>
-    <state width="1802" height="325" key="GridCell.Tab.3.bottom/-1291.305.1291.768/75.0.1845.1080@75.0.1845.1080" timestamp="1584376524527" />
-    <state width="1802" height="325" key="GridCell.Tab.3.center" timestamp="1584376524527">
-      <screen x="75" y="0" width="1845" height="1080" />
-    </state>
-    <state width="1802" height="325" key="GridCell.Tab.3.center/-1291.305.1291.768/75.0.1845.1080@75.0.1845.1080" timestamp="1584376524527" />
-    <state width="1802" height="325" key="GridCell.Tab.3.left" timestamp="1584376524527">
-      <screen x="75" y="0" width="1845" height="1080" />
-    </state>
-    <state width="1802" height="325" key="GridCell.Tab.3.left/-1291.305.1291.768/75.0.1845.1080@75.0.1845.1080" timestamp="1584376524527" />
-    <state width="1802" height="325" key="GridCell.Tab.3.right" timestamp="1584376524527">
-      <screen x="75" y="0" width="1845" height="1080" />
-    </state>
-    <state width="1802" height="325" key="GridCell.Tab.3.right/-1291.305.1291.768/75.0.1845.1080@75.0.1845.1080" timestamp="1584376524527" />
-    <state x="706" y="256" key="MultipleFileMergeDialog" timestamp="1585517624213">
-      <screen x="75" y="0" width="1845" height="1080" />
-    </state>
-    <state x="706" y="256" key="MultipleFileMergeDialog/-1291.305.1291.768/75.0.1845.1080@75.0.1845.1080" timestamp="1585517624213" />
-    <state x="637" y="243" width="743" height="593" key="NewModule_or_Project.wizard" timestamp="1585471875470">
-      <screen x="75" y="0" width="1845" height="1080" />
-    </state>
-    <state x="637" y="243" width="743" height="593" key="NewModule_or_Project.wizard/-1291.305.1291.768/75.0.1845.1080@75.0.1845.1080" timestamp="1585471875470" />
-    <state x="231" y="43" key="SettingsEditor" timestamp="1590802435525">
-      <screen x="75" y="0" width="1291" height="768" />
-    </state>
-    <state x="566" y="252" key="SettingsEditor/-1291.305.1291.768/75.0.1845.1080@75.0.1845.1080" timestamp="1585815937709" />
-    <state x="231" y="43" key="SettingsEditor/75.0.1291.768@75.0.1291.768" timestamp="1590802435525" />
-    <state x="589" y="276" key="Vcs.Push.Dialog.v2" timestamp="1585477697046">
-      <screen x="75" y="0" width="1845" height="1080" />
-    </state>
-    <state x="589" y="276" key="Vcs.Push.Dialog.v2/-1291.305.1291.768/75.0.1845.1080@75.0.1845.1080" timestamp="1585477697046" />
-    <state x="167" y="92" width="1661" height="896" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1584620458482">
-      <screen x="75" y="0" width="1845" height="1080" />
-    </state>
-    <state x="167" y="92" width="1661" height="896" key="com.intellij.history.integration.ui.views.FileHistoryDialog/-1291.305.1291.768/75.0.1845.1080@75.0.1845.1080" timestamp="1584620458482" />
-    <state x="678" y="364" key="com.intellij.ide.util.TipDialog" timestamp="1585498177954">
-      <screen x="75" y="0" width="1845" height="1080" />
-    </state>
-    <state x="678" y="364" key="com.intellij.ide.util.TipDialog/-1291.305.1291.768/75.0.1845.1080@75.0.1845.1080" timestamp="1585498177954" />
-    <state x="792" y="458" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1585558093889">
-      <screen x="75" y="0" width="1845" height="1080" />
-    </state>
-    <state x="792" y="458" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/-1291.305.1291.768/75.0.1845.1080@75.0.1845.1080" timestamp="1585558093889" />
-    <state x="503" y="128" width="647" height="534" key="find.popup" timestamp="1590805420666">
-      <screen x="75" y="0" width="1291" height="768" />
-    </state>
-    <state x="-872" y="499" width="647" height="534" key="find.popup/-1291.305.1291.768/75.0.1845.1080@-1291.305.1291.768" timestamp="1584181309860" />
-    <state x="686" y="180" width="800" height="702" key="find.popup/-1291.305.1291.768/75.0.1845.1080@75.0.1845.1080" timestamp="1585820214672" />
-    <state x="503" y="128" width="647" height="534" key="find.popup/75.0.1291.768@75.0.1291.768" timestamp="1590805420666" />
+    <state x="616" y="450" width="596" height="536" key="find.popup/3498.143.1478.864/72.0.3368.1440@72.0.3368.1440" timestamp="1590903199232" />
   </component>
 </project>

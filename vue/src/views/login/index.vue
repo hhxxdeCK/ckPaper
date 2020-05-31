@@ -18,7 +18,7 @@
                   autoComplete="on"></el-input>
       </el-form-item>
       <el-form-item>
-        <Verify @success="sucess" @error="error('error')" :type="3"></Verify>
+        <Verify  @success="sucess" @error="error('error')" :type="3"></Verify>
       </el-form-item>
       <el-form-item>
         <el-button type="primary" style="width:100%;" :loading="loading" @click.native.prevent="handleLogin" :disabled="loginIsActive">
